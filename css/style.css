@@ -5843,7 +5843,40 @@ button.close {
     src: url("../fonts/UniversLTStd-Bold.svg#UniversLTStd-Bold") format("svg"); } }
 
 body {
-  font-family: Univers-light-normal; }
+  font-family: Univers-light-normal;
+  font-size: 16px; }
+
+.container {
+  width: 600px; }
 
 strong, h1, h2, h3, h4, h5, h6 {
   font-family: UniversLTStd-Bold; }
+
+.method {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); }
+  .method a {
+    counter-increment: my-awesome-counter;
+    display: block;
+    text-align: center;
+    font-family: UniversLTStd-Bold;
+    color: #990000;
+    text-transform: capitalize; }
+    .method a::before {
+      content: "";
+      height: 24px;
+      width: 24px;
+      margin: 0 auto 8px auto;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      -moz-background-clip: padding;
+      -webkit-background-clip: padding-box;
+      background-clip: padding-box;
+      padding-top: 3px;
+      display: block;
+      color: white;
+      background-color: #990000;
+      content: counter(my-awesome-counter); }
