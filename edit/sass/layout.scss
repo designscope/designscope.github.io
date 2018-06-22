@@ -5,8 +5,39 @@
 
 body {
   font-family: $font-text;
+  font-size: $fs2;
+}
+
+.container {
+  width: 600px;
 }
 
 strong, h1, h2, h3, h4, h5, h6 {
   font-family: $font-title;
+}
+
+.method {
+ display: grid;
+ grid-template-columns: repeat(6, 1fr);
+
+a {
+  counter-increment: my-awesome-counter;
+  display: block;
+   text-align: center;
+  font-family: $font-title;
+  color: $brand-color;
+  text-transform: capitalize;
+  &::before {
+    content: "";
+    height: $gap3;
+    width: $gap3;
+    margin: 0 auto $gap auto;
+    @include radius(50%);
+    padding-top: 3px;
+    display: block;
+    color: white;
+    background-color: $brand-color;
+    content: counter(my-awesome-counter);
+  }
+}
 }

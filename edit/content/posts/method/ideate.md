@@ -1,9 +1,9 @@
 ---
-title:       Ideate
+title:       ideate
 slug:        ideate
 template:    post.hbs
-date:        2017-07-21
-author:      nicholas
+date:        2018-06-22
+author:      jdmar3
 ---
 ## Description
 

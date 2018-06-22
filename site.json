@@ -1,6 +1,6 @@
 {
   "title": "Design Scope",
-  "description": "",
+  "description": "lorem ipsum dolor",
   "url": "",
   "rss": "/rss.xml",
   "maxItems": 6,
@@ -21,13 +21,13 @@
       "github": "nonlinear",
       "instagram": "nonlinear"
     },
-        "jdmartin3": {
+        "jdmar3": {
       "name": "John D Martin 3",
       "bio": "",
       "email": "",
-      "twitter": "jdmartin3",
-      "github": "jdmartin3",
-      "instagram": "jdmartin3"
+      "twitter": "jdmar3",
+      "github": "jdmar3",
+      "instagram": "jdmar3"
     }
   },
   "imageCompression": true,

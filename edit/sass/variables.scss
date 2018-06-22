@@ -4,8 +4,21 @@
 
 $prefixes: webkit moz ms o;
 
-$gap: 15px;
+$gap: 8px;
+$fs: 8px;
 $color-accent: #ccc;
+
+$brand-color: darken(red, 20%);
 
 $font-title: UniversLTStd-Bold;
 $font-text: Univers-light-normal;
+
+$gap2: ($gap * 2);
+$gap3: ($gap * 3);
+$gap4: ($gap * 4);
+$gap5: ($gap * 5);
+
+$fs2: ($fs * 2);
+$fs3: ($fs * 3);
+$fs4: ($fs * 4);
+$fs5: ($fs * 5);

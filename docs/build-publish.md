@@ -3,7 +3,7 @@ title:       Building the Site and Publishing on GitHub
 slug:        build-publish
 template:    post.hbs
 date:        2017-08-20
-author:      nicholas
+author:      nonlinear
 ---
 
 ## Git repositories
