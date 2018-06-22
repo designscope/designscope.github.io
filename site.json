@@ -1,6 +1,6 @@
 {
-  "title": "Project Title",
-  "description": "Project description here Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, repudiandae!",
+  "title": "Design Scope",
+  "description": "",
   "url": "",
   "rss": "/rss.xml",
   "maxItems": 6,
@@ -9,19 +9,25 @@
   "concatJs": [
     "./bower_components/jquery/dist/jquery.js",
     "./bower_components/bootstrap-sass/assets/javascripts/bootstrap.js",
-    "./bower_components/barba.js/dist/barba.js",
     "./edit/javascripts/*.js"
   ],
   "styleSheet": "style.css",
   "authors": {
-    "nicholas": {
+    "nonlinear": {
       "name": "Nicholas Frota",
       "bio": "the anagram of my name is anarchist fool",
       "email": "info@nicholasfrota.com",
       "twitter": "nonlinear",
       "github": "nonlinear",
-      "instagram": "nonlinear",
-      "pinterest": "nonlinearguy"
+      "instagram": "nonlinear"
+    },
+        "jdmartin3": {
+      "name": "John D Martin 3",
+      "bio": "",
+      "email": "",
+      "twitter": "jdmartin3",
+      "github": "jdmartin3",
+      "instagram": "jdmartin3"
     }
   },
   "imageCompression": true,
