@@ -14,3 +14,4 @@ Ideas
 - Krita tablet skin
 - Social media TV channel
 - Github portfolio mediator
+- pay it back for open source projects (it sniffs your repo, get libraries, and check if you donated to community). other revenue models (open + closed repo plus patreon?)
