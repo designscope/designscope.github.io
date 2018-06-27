@@ -10,9 +10,17 @@ status: draft
 
 - title
 - brief description
-- project it belongs
-- phase it represents
-- do we have any deliverables? List it.
-  - do we need to sanitise it?
-- list possible cool multimedia we can have to convey the message
-- promotion tie-in ideas (voice, events, audiences to reach)
+- define category
+  - project phase
+    - project it belongs
+    - phase it represents
+    - do we have any deliverables? List it.
+      - do we need to sanitise it?
+    - list possible cool multimedia we can have to convey the message
+    - promotion tie-in ideas (voice, events, audiences to reach)
+  - critique
+    - historical approach/context
+    - reverse engineering
+    - critical opinion
+    - proposal
+    - actionable

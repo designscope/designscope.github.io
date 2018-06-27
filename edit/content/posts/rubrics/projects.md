@@ -13,3 +13,4 @@ status: draft
 - brief description
 - why you think it's important
 - skillset needed
+- possible funding sources/audiences
