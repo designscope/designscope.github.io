@@ -27,3 +27,12 @@ author:      jdmar3
 ## Case examples
 
 ## Synonyms
+
+## interaction design, in order of details
+
+> where do we put user personas? i know it's a deliverable, but where is it?)
+
+- brainstorm
+- scenario
+- flows (copy included)
+- modules
