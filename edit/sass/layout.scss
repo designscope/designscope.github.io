@@ -1,43 +1,136 @@
-
-
+@include font-face(fontawesome-webfont);
 @include font-face(Univers-light-normal);
-@include font-face(UniversLTStd-Bold);
+@include font-face(UniversLTStd);
+@include font-face(rakesly-regular);
 
 body {
   font-family: $font-text;
-  font-size: $fs2;
+  font-size: $fs4;
+  color: $c-primary;
+  border: solid $gap6 white;
+  @include tile(grid-b, $c-secondary, 12px);
+  background-attachment: fixed;
+  &:before, &:after {
+    content: "";
+    display: block;
+    height: $gap4;
+    width: 100%;
+    @include tile(lines-c, white, 2px);
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+  }
+  &:before {
+    top: 0;
+  }
+  &:after {
+    bottom: 0;
+  }
 }
 
-.container {
-  width: 600px;
-}
-
-strong, h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, strong, b {
   font-family: $font-title;
+  text-transform: uppercase;
 }
+
+.logo {
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  height: $gap7;
+  border: solid $gap white;
+  border-left-width: 0;
+  font-family: $font-brand;
+  border-right-width: $gap2;
+  padding-left: $gap13 - 1;
+  font-size: $fs4;
+  line-height: 100%;
+  display: inline-block;
+  background-color: #fff;
+  background-size: contain;
+  &:hover {
+    text-decoration: none;
+  }
+}
+a {
+  color: $c-primary;
+  cursor: pointer;
+  &:hover {
+    color: $c-secondary;
+  }
+  @include transition;
+}
+
+
+
+h1 {
+  font-size: $fs13;
+}
+.title {
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 0 $gap4 0;
+  padding: $gap2 $gap3 $gap ($gap6 - 3);
+}
+p, footer.footer, ul, ol, .content header, .method {
+  margin-bottom: $gap4;
+  background-color: #fff;
+  padding: $gap2 $gap3 $gap ($gap6 - 3);
+  border-right: solid 2px $c-secondary;
+}
+
 
 .method {
  display: grid;
  grid-template-columns: repeat(6, 1fr);
 
-a {
+ a {
   counter-increment: my-awesome-counter;
   display: block;
-   text-align: center;
+  text-align: center;
   font-family: $font-title;
-  color: $brand-color;
-  text-transform: capitalize;
+  color: $c-primary;
+  text-transform: uppercase;
   &::before {
     content: "";
-    height: $gap3;
-    width: $gap3;
+    height: $gap5;
+    width: $gap5;
+    font-size: $fs5;
+    padding-top: 1px;
     margin: 0 auto $gap auto;
     @include radius(50%);
-    padding-top: 3px;
     display: block;
     color: white;
-    background-color: $brand-color;
+    background-color: $c-primary;
     content: counter(my-awesome-counter);
   }
 }
+}
+
+
+
+
+$bd-width: 500px;
+$bd-para: ($gap20 * 5);
+$bd-gap: 75px;
+$bd-overlap: ($bd-width - $bd-gap);
+
+body {
+  border-left-width: $bd-width;
+}
+header.header, footer.footer, article.content section {
+  width: $bd-para;
+  margin: $gap4 0 0 0;
+  margin-left: (($bd-width - $bd-overlap) * -1);
+}
+
+.links {
+  font-size: $fs3;
+  a {
+    text-decoration: underline;
+    &:not(:last-of-type) {
+      border-right: solid 1px $c-secondary;
+      padding-right: $gap;
+      margin-right: $gap;
+    }
+  }
 }
