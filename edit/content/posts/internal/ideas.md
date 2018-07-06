@@ -16,9 +16,25 @@ Ideas
 - Github portfolio mediator
 - pay it back for open source projects (it sniffs your repo, get libraries, and check if you donated to community). other revenue models (open + closed repo plus patreon?)
 
-- Social login aware survey platform
-- Portable/self-hosted hybrid markdown/LaTeX editor and compiler, based on pandoc
 - Alexa app for NextBus/TransLoc Rider
+  - Open source audio agents research
+- Portable/self-hosted hybrid markdown/LaTeX editor and compiler, based on pandoc
+  - Replicate my command line workflow in a web-based interface
+  - Single input, multiple output
+  - User research: how are academics who use plaintext using it? What is their workflow? 
 - Self-grading tech-tools class using Travis-CI
+  - Continuous-testing platform for grading. 
+  - offload repetitive work, automated instructional workflow
+  - continuous grading for students reduces insecurity because grading is not a specific
+  - define this implementation: how and why to use this way?
 - GitHub/Bitbucket effort measure (related to self-grading class)
-- Browser-based interface for software-defined (SDR) radio devices (web-based clone of GNU radio, with better onboarding)
+  - User research: other instructors who are using or want to use a similar method
+  - Collaboration is another test
+  - Travis-CI library of tests for continuous grading and collaboration
+  - Marketplace of tests
+- Browser-based interface for software-defined radio (SDR) devices (web-based clone of GNU radio, with better onboarding)
+  - Marketing research: technical possibilities, different markets, lo-fi, conceptual
+  - Brainstorming: scenarios, for different audiences, choose one or two
+  -
+- Social login aware survey platform
+  - Open-source qualtrics/survey monkey clone WITH social login
