@@ -20,5 +20,5 @@ Ideas
 - Portable/self-hosted hybrid markdown/LaTeX editor and compiler, based on pandoc
 - Alexa app for NextBus/TransLoc Rider
 - Self-grading tech-tools class using Travis-CI
-- GitHub/Bitbucket effort measure
-- 
+- GitHub/Bitbucket effort measure (related to self-grading class)
+- Browser-based interface for software-defined (SDR) radio devices (web-based clone of GNU radio, with better onboarding)
