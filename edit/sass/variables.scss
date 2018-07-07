@@ -9,9 +9,14 @@ $fs: 4px;
 $c-primary: #0D2277;
 $c-secondary: LightSteelBlue;
 
-$font-title: rakesly-regular;
+$font-title: rakesly;
 $font-brand: UniversLTStd;
 $font-text: Univers-light-normal;
+
+$bd-width: 300px;
+$bd-para: 700px;
+$bd-gap: 75px;
+$bd-overlap: ($bd-width - $bd-gap);
 
 // (\_/)
 // (`ㅅ`)づ calculations
@@ -56,3 +61,4 @@ $fs17: ($fs * 17);
 $fs18: ($fs * 18);
 $fs19: ($fs * 19);
 $fs20: ($fs * 20);
+

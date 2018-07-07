@@ -1,7 +1,7 @@
 @include font-face(fontawesome-webfont);
 @include font-face(Univers-light-normal);
 @include font-face(UniversLTStd);
-@include font-face(rakesly-regular);
+@include font-face(rakesly);
 
 body {
   font-family: $font-text;
@@ -65,17 +65,40 @@ a {
 h1 {
   font-size: $fs13;
 }
-.title {
-  background-color: #fff;
-  display: inline-block;
-  margin: 0 0 $gap4 0;
-  padding: $gap2 $gap3 $gap ($gap6 - 3);
+h2 {
+  font-size: $fs10;
 }
-p, footer.footer, ul, ol, .content header, .method {
-  margin-bottom: $gap4;
-  background-color: #fff;
-  padding: $gap2 $gap3 $gap ($gap6 - 3);
-  border-right: solid 2px $c-secondary;
+h3 {
+  font-size: $fs8;
+}
+// .intro h1 {
+//   background-color: #fff;
+//   display: inline-block;
+//   margin: 0 0 $gap4 0;
+//   padding: $gap2 $gap3 $gap ($gap6 - 3);
+// }
+
+footer.footer, .content header, .method {
+  @extend %border;
+}
+section > {
+  p, ul, ol, h1, h2, h3 {
+    @extend %border;
+  }
+}
+.projects {
+ @media screen and (min-width: $bd-para) {
+ display: grid;
+  grid-template-columns: repeat(3, 1fr);
+ }
+  .project {
+    @extend %border;
+
+    margin-bottom: 0;
+    & > .title {
+      margin-top: 0;
+    }
+  }
 }
 
 
@@ -109,19 +132,24 @@ p, footer.footer, ul, ol, .content header, .method {
 
 
 
-$bd-width: 500px;
-$bd-para: ($gap20 * 5);
-$bd-gap: 75px;
-$bd-overlap: ($bd-width - $bd-gap);
-
-body {
-  border-left-width: $bd-width;
-}
-header.header, footer.footer, article.content section {
+.container {
   width: $bd-para;
-  margin: $gap4 0 0 0;
-  margin-left: (($bd-width - $bd-overlap) * -1);
 }
+
+// body {
+//   border-left-width: $bd-width;
+// }
+// header.header, footer.footer, article.content section {
+// width: 100%;
+//   margin: $gap4 0 0 0;
+//    @media screen and (min-width: $bd-para) {
+//       width: $bd-para;
+//   margin-left: (($bd-width - $bd-overlap) * -1);
+//  }
+
+// }
+
+
 
 .links {
   font-size: $fs3;

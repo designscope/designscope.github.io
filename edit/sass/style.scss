@@ -2,6 +2,7 @@
 
 @import "./bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "./bower_components/font-awesome/scss/font-awesome.scss";
+@import "./bower_components/animatewithsass/animate.scss";
 @import "./bower_components/tile/tile.scss";
 
 // (`ㅅ`)づ global imports
@@ -11,4 +12,53 @@
 
 // (`ㅅ`)づ project imports
 
+@import "functions";
 @import "layout";
+@import "forms";
+
+
+.btn-group {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  .btn:not(.dropdown-toggle) {
+    text-align: left;
+  }
+}
+.btn-group, .btn {
+font-family: $font-brand;
+
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.btn {
+  padding: $gap2;
+@extend %card;
+@extend %btn;
+}
+
+.dropdown-menu {
+  @extend %card;
+  width: 100%;
+  background-color: $c-secondary;
+  .title {
+    margin: 0;
+    padding: $gap2;
+    margin-bottom: $gap2;
+    border-bottom: dashed 1px white;
+  }
+  a {
+    @extend %btn;
+    line-height: 110%;
+    padding: $gap $gap2;
+    display: block;
+    &:hover {
+      text-decoration: none;
+      }
+    }
+}
+
+.disabled {
+  @include disable(link);
+  color: white !important;
+}
