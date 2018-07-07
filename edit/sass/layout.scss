@@ -33,24 +33,7 @@ h1, h2, h3, h4, h5, h6, strong, b {
   text-transform: uppercase;
 }
 
-.logo {
-  background-image: url(../images/logo.svg);
-  background-repeat: no-repeat;
-  height: $gap7;
-  border: solid $gap white;
-  border-left-width: 0;
-  font-family: $font-brand;
-  border-right-width: $gap2;
-  padding-left: $gap13 - 1;
-  font-size: $fs4;
-  line-height: 100%;
-  display: inline-block;
-  background-color: #fff;
-  background-size: contain;
-  &:hover {
-    text-decoration: none;
-  }
-}
+
 a {
   color: $c-primary;
   cursor: pointer;
@@ -71,12 +54,23 @@ h2 {
 h3 {
   font-size: $fs8;
 }
-// .intro h1 {
-//   background-color: #fff;
-//   display: inline-block;
-//   margin: 0 0 $gap4 0;
-//   padding: $gap2 $gap3 $gap ($gap6 - 3);
-// }
+.logo {
+  font-size: $fs13;
+  font-family: $font-title;
+  text-transform: uppercase;
+  background-color: #fff;
+  background-image: url(../images/compass.svg);
+  background-repeat: no-repeat;
+  padding: 0;
+  line-height: 100%;
+  margin: $gap4 0;
+  margin-left: ($gap9 * -1);
+  padding-left: $gap12;
+  background-size: $gap10 $gap10;
+  background-position: left center;
+  display: inline-block;
+  border: none;
+}
 
 footer.footer, .content header, .method {
   @extend %border;
@@ -93,11 +87,27 @@ section > {
  }
   .project {
     @extend %border;
-
     margin-bottom: 0;
     & > .title {
       margin-top: 0;
     }
+    &:before {
+      content:  "";
+      height: $gap12;
+      display: block;
+      margin-bottom: $gap2;
+background-size: contain;
+background-repeat: no-repeat;
+    }
+          &:first-of-type:before {
+        background-image: url(../images/map.svg);
+      }
+                &:nth-of-type(2):before {
+        background-image: url(../images/drill.svg);
+      }
+            &:last-of-type:before {
+        background-image: url(../images/stethoscope.svg);
+      }
   }
 }
 
