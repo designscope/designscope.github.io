@@ -15,7 +15,7 @@ body {
     display: block;
     height: $gap4;
     width: 100%;
-    @include tile(lines-up-c, white, 2px);
+    @include tile(lines-up-c, white, 3px);
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -38,7 +38,7 @@ a {
   color: $c-primary;
   cursor: pointer;
   &:hover {
-    color: $c-secondary;
+    text-decoration: none;
   }
   @include transition;
 }
@@ -54,26 +54,32 @@ h2 {
 h3 {
   font-size: $fs8;
 }
-.logo {
+a.logo {
   font-size: $fs13;
   font-family: $font-title;
   text-transform: uppercase;
   background-color: #fff;
   background-image: url(../images/compass.svg);
   background-repeat: no-repeat;
-  padding: 0;
+  padding: 0 $gap2 0 $gap12;
   line-height: 100%;
   margin: $gap4 0;
   margin-left: ($gap9 * -1);
-  padding-left: $gap12;
   background-size: $gap10 $gap10;
   background-position: left center;
   display: inline-block;
   border: none;
+  &:hover {
+    margin-left: ($gap10 * -1);
+    padding-left: $gap13;
+  }
 }
 
 footer.footer, .content header, .method {
   @extend %border;
+}
+footer.footer {
+  margin-bottom: 0;
 }
 section > {
   p, ul, ol, h1, h2, h3 {
@@ -125,22 +131,19 @@ background-repeat: no-repeat;
   text-transform: uppercase;
   &::before {
     content: "";
-    height: $gap5;
-    width: $gap5;
-    font-size: $fs5;
+    height: $gap6;
+    width: $gap6;
+    font-size: $fs6;
     padding-top: 1px;
     margin: 0 auto $gap auto;
     @include radius(50%);
     display: block;
     color: white;
-    background-color: $c-primary;
+    background-color: darken(red, 20%);
     content: counter(my-awesome-counter);
   }
 }
 }
-
-
-
 
 .container {
   width: $container;
@@ -149,8 +152,6 @@ background-repeat: no-repeat;
 
   }
 }
-
-
 
 
 .links {
