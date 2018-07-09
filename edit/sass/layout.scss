@@ -8,7 +8,8 @@ body {
   font-size: $fs4;
   color: $c-primary;
   border: solid $gap6 white;
-  @include tile(grid-b, $c-secondary, 12px);
+  background-image: url(../images/grid--inverted.svg);
+  background-color: $c-secondary;
   background-attachment: fixed;
   &:before, &:after {
     content: "";
