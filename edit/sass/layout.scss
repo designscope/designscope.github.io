@@ -3,14 +3,34 @@
 @include font-face(UniversLTStd);
 @include font-face(rakesly);
 
-body {
-  font-family: $font-text;
-  font-size: $fs4;
-  color: $c-primary;
-  border: solid $gap6 white;
+@mixin grid($duration: $animation-duration, $function: $animation-function, $delay: $animation-delay, $count: $animation-count, $fill: $animation-fill, $visibility: $animation-visibility) {
+  @include animation(grid $duration $function $delay $count $fill);
+  @include visibility($visibility);
+  @at-root {
+    @include keyframes(grid) {
+      0% {
+       background-color: #fff;
+      }
+    }
+  }
+}
+
+.grid {
   background-image: url(../images/grid--inverted.svg);
+  @include grid($duration: 2s);
   background-color: $c-secondary;
   background-attachment: fixed;
+  @include transition;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  position: fixed;
+}
+body {
+  font-family: $font-text;
+  margin: $gap6;
+  font-size: $fs4;
+  color: $c-primary;
   &:before, &:after {
     content: "";
     display: block;
@@ -74,6 +94,10 @@ a.logo {
     margin-left: ($gap10 * -1);
     padding-left: $gap13;
   }
+}
+
+article section {
+  @include fadeInLeft($duration: 500ms);
 }
 
 footer.footer, .content header, .method {
