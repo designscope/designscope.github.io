@@ -15,20 +15,15 @@
   }
 }
 
-.grid {
+
+body {
   background-image: url(../images/grid--inverted.svg);
   @include grid($duration: 2s);
   background-color: $c-secondary;
+   @include transition;
   background-attachment: fixed;
-  @include transition;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  position: fixed;
-}
-body {
   font-family: $font-text;
-  margin: $gap6;
+  border: solid $gap6 white;
   font-size: $fs4;
   color: $c-primary;
   &:before, &:after {
@@ -36,7 +31,7 @@ body {
     display: block;
     height: $gap4;
     width: 100%;
-    @include tile(lines-up-c, white, 3px);
+    @include tile(lines-up-c, white, 6px);
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -96,8 +91,9 @@ a.logo {
   }
 }
 
-article section {
-  @include fadeInLeft($duration: 500ms);
+article {
+  @include fadeInUp($duration: 1s, $delay: $animation-delay);
+  @include transition;
 }
 
 footer.footer, .content header, .method {
