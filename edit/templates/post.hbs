@@ -1,14 +1,16 @@
 {{> header}}
-<div class="container">
     {{#post}}
-            <h1>{{title}}</h1>
+ <section class="header">
+                <h1>{{title}}</h1>
             <p class="post-meta">
                     {{date format="MMMM Do YYYY"}}
                     by <span>{{author.name}}</span>
                     {{#if tags}} on {{{tags}}}{{/if}}
                 </p>
-                <hr>
-            {{{body}}}
+ </section>
+            <section class="content">
+                {{{body}}}
+            </section>
     {{/post}}
-</div>
+{{> footer}}
 {{> js}}

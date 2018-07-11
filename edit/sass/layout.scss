@@ -2,6 +2,7 @@
 @include font-face(Univers-light-normal);
 @include font-face(UniversLTStd);
 @include font-face(rakesly);
+// @include font-face(Univers-light-normal, UniversLTStd, bold);
 
 @mixin grid($duration: $animation-duration, $function: $animation-function, $delay: $animation-delay, $count: $animation-count, $fill: $animation-fill, $visibility: $animation-visibility) {
   @include animation(grid $duration $function $delay $count $fill);
@@ -44,7 +45,7 @@ body {
   }
 }
 
-h1, h2, h3, h4, h5, h6, strong, b {
+h1, h2, h3, h4, h5, h6, b {
   font-family: $font-title;
   text-transform: uppercase;
 }

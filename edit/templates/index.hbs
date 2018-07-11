@@ -1,6 +1,4 @@
 {{> header}}
-<div class="grid"></div>
-  <article class="container">
   <section class="intro">
         <a href="/" class="logo">{{meta_title}}</a>
     <!-- <p>{{meta_description}}</p> -->
@@ -27,14 +25,14 @@
        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam molestiae omnis quae unde nesciunt autem reiciendis, itaque cum alias illum!</p>
      </div>
           <div class="btn-group">
-      <button class="btn" type="button">next: ideation</button>
+      <a class="btn" href="exocortex-framing" type="button">next: framing</a>
       <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
       <i class="fa fa-bars"></i>
   </span>
       </button>
       <div class="dropdown-menu">
-        <p class="title">other phases:</p>
-
+        <p class="title">other phases appear here</p>
+<!--
           <a href="exocortex-framing">framing</a>
           <a href="exocortex-data">data research</a>
           <a href="exocortex-competition">competition research</a>
@@ -42,7 +40,7 @@
           <a href="exocortex-ideate">ideation</a>
           <a href="exocortex-validation" class="disabled">validation</a>
           <a href="exocortex-feedback" class="disabled">feedback</a>
-          <a href="exocortex-scope" class="disabled">scope</a>
+          <a href="exocortex-scope" class="disabled">scope</a> -->
       </div>
       </div>
   </div>
@@ -108,29 +106,5 @@
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sint. A officiis repellat aspernatur et fugit porro quas, hic voluptatum.</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate non ullam aliquid iusto amet consequatur iste itaque accusamus veritatis totam vitae est rerum, ab ea. Cum optio ipsum, dicta tenetur!</p>
 </section>
-<footer class="footer">
-    <div class="links">
-        <a href="">Lorem.</a>
-        <a href="">Esse.</a>
-        <a href="">Veniam.</a>
-        <a href="">Sequi.</a>
-    </div>
-</footer>
-</article>
-
-
-
-
-
-
-<!-- {{#each posts}}
-    <div class="post">
-        <h3><a href="{{url}}">{{title}}</a></h3>
-        {{#if date}}
-            <p class="post-meta">
-                {{date format="MMMM Do YYYY"}}
-            </p>
-        {{/if}}
-    </div>
-{{/each}} -->
+{{> footer}}
 {{> js}}
