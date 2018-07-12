@@ -52,5 +52,5 @@ author:      nonlinear
 ### Possibilities
 
 - letter templates
-- Decision trees
+- Any kind of decision trees (customer service, troubleshooting, procedures)
 - complex syntax
