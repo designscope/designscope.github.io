@@ -3,9 +3,9 @@
  <section class="header">
                 <h1>{{title}}</h1>
             <p class="post-meta">
-                    {{date format="MMMM Do YYYY"}}
-                    by <span>{{author.name}}</span>
-                    {{#if tags}} on {{{tags}}}{{/if}}
+                by {{author.name}} on {{date format="MMMM Do YYYY"}}
+                <br>
+                {{#if tags}}{{{tags}}}{{/if}}
                 </p>
  </section>
             <section class="content">

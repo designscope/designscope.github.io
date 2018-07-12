@@ -25,17 +25,19 @@ font-family: $font-brand;
   @extend %card;
   width: 100%;
   background-color: $c-secondary;
-  .title {
+  p {
     margin: 0;
     padding: $gap2;
-    margin-bottom: $gap2;
-    border-bottom: dashed 1px white;
   }
   a {
     @extend %btn;
     line-height: 110%;
     padding: $gap $gap2;
     display: block;
+    &:first-of-type {
+margin-top: $gap2;
+    border-top: dashed 1px white;
+    }
     &:hover {
       text-decoration: none;
       }
