@@ -6,14 +6,15 @@ $prefixes: webkit moz ms o;
 
 $gap: 6px;
 $fs: 4px;
-$c-primary: #0D2277;
-$c-secondary: LightSteelBlue;
+$container: 700px;
+
+$c-bg: white;
+$c-primary: darken(#ff6565, 35%);
+$c-secondary: lighten(#ff8f7a, 15%);
 
 $font-title: rakesly;
 $font-brand: UniversLTStd;
 $font-text: Univers-light-normal;
-
-$container: 700px;
 
 $animation-duration: 1s !default;
 $animation-function: ease !default;
