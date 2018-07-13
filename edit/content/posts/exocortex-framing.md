@@ -7,6 +7,8 @@ date:        2018-07-11
 author:      nonlinear
 ---
 
+### Abstract
+
 ### Goals
 
 - **Augmented Memory**
@@ -39,15 +41,16 @@ author:      nonlinear
 - **Last Mile**
    - Establishing a presence on all major systems is an ongoing struggle. not only normalizing onboarding in different systems but keeping up-to-date with updates thst may affect usage.
 
-### Organization Mode
+### monetization Possibilities
 
-- **Privacy**
-- **Team Management**
-   - absolute control of which team members receives which package. Absolute control of who's in and who's out.
-- **Top-Down Subscription**
-   - Admin creates new packages, chooses teams, and team members receive it automatically.
-- **Automatic Update**
-   - Team members receive updates automatically, ensuring company standards are always current.
+- Organization Mode
+  - **Privacy**
+  - **Team Management**
+     - absolute control of which team members receives which package. Absolute control of who's in and who's out.
+  - **Top-Down Subscription**
+     - Admin creates new packages, chooses teams, and team members receive it automatically.
+  - **Automatic Update**
+     - Team members receive updates automatically, ensuring company standards are always current.
 
 ### Possibilities
 
