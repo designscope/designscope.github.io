@@ -1,8 +1,8 @@
-%border {
+@mixin border($position: right) {
     margin-bottom: $gap4;
   background-color: #fff;
   padding: $gap2 $gap3;
-  border-right: solid 2px $c-secondary;
+  border-#{$position}: solid 2px $c-secondary;
 }
 
 %card {

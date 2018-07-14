@@ -72,7 +72,7 @@ h3 {
 }
 a.logo {
 
-  .intro:not(.project) & {
+  .intro:not(.post) & {
     font-size: $fs13;
   background-image: url(../images/compass.svg);
   background-repeat: no-repeat;
@@ -80,12 +80,13 @@ a.logo {
   background-size: $gap10 $gap10;
   margin: $gap4 0;
   padding: 0 $gap2 0 $gap12;
+    &:hover {
+    margin-left: ($gap10 * -1);
+    padding-left: $gap13;
   }
-   .intro.project & {
-    font-size: $fs7;
-  padding: 0 $gap2;
-margin: 0;
-  margin-top: $gap4;
+  }
+   .intro.post & {
+    font-size: $fs6;
   }
   font-family: $font-title;
   text-transform: uppercase;
@@ -94,10 +95,7 @@ margin: 0;
   background-position: left center;
   display: inline-block;
   border: none;
-  &:hover {
-    margin-left: ($gap10 * -1);
-    padding-left: $gap13;
-  }
+
   span {
     font-size: $fs8;
     display: block;
@@ -117,14 +115,32 @@ article {
   @include transition;
 }
 
-footer.footer, .content header, .method {
-  @extend %border;
+.content header, .method {
+  @include border;
 }
 footer.footer {
+  @include border;
   margin-bottom: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+
+}
+.intro.post {
+    display: grid;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  margin-top: $gap4;
+  @include border;
+  padding: $gap2;
+   align-items: end;
+  h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+  }
+  .meta {
+    @include reset(list);
+  }
 
 }
 form.subscribe .btn-group {
@@ -142,9 +158,12 @@ form.subscribe .btn-group {
   }
 
 }
-section > {
-  p, ul, ol, h1, h2, h3 {
-    @extend %border;
+section:not(.intro) > {
+  p, ul, ol {
+    @include border;
+  }
+  h1, h2, h3, h4 {
+ @include border;
   }
 }
 .projects {
@@ -153,7 +172,7 @@ section > {
    grid-template-columns: repeat(3, 1fr);
  }
  .project {
-  @extend %border;
+  @include border;
   margin-bottom: 0;
   & > .title {
     margin-top: 0;
@@ -215,7 +234,7 @@ section > {
 }
 
 
-.links, .post-meta {
+.links, .meta {
   font-size: $fs3;
   a {
     text-decoration: underline;
