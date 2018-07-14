@@ -8,8 +8,8 @@
 %card {
 
   border: none;
-  @include radius(3px);
-  @include shadow(box, 0 3px 0 rgba(0, 0, 0, 0.05));
+  @include radius($radius);
+  @include shadow(box, 0 $radius 0 rgba(0, 0, 0, 0.05));
   @include transition;
     &:hover {
   @include shadow(box, 0 5px 0 rgba(0, 0, 0, 0.07));

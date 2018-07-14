@@ -35,7 +35,7 @@ font-weight: bold;
     display: block;
     &:first-of-type {
 margin-top: $gap2;
-    border-top: dashed 1px$c-bg;
+    border-top: dashed 1px $c-bg;
     }
     &:hover {
       text-decoration: none;

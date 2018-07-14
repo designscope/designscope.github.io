@@ -10,9 +10,9 @@
     @include keyframes(grid) {
       0% {
        background-color: #fff;
-      }
-    }
-  }
+     }
+   }
+ }
 }
 
 
@@ -20,7 +20,7 @@ body {
   background-image: url(../images/grid--inverted.svg);
   @include grid($duration: 2s);
   background-color: $c-secondary;
-   @include transition;
+  @include transition;
   background-attachment: fixed;
   font-family: $font-text;
   border: solid $gap6 $c-bg;
@@ -89,6 +89,18 @@ a.logo {
     margin-left: ($gap10 * -1);
     padding-left: $gap13;
   }
+  span {
+    font-size: $fs8;
+    display: block;
+    line-height: 100%;
+  }
+  &.exocortex {
+    background-image: url(../images/exocortex.svg);
+  }
+  &.exocortex, &.object {
+    background-position: left bottom;
+    margin-bottom: 0;
+  }
 }
 
 article {
@@ -101,6 +113,25 @@ footer.footer, .content header, .method {
 }
 footer.footer {
   margin-bottom: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+
+}
+form.subscribe .btn-group {
+  grid-template-columns: 1fr 1fr;
+
+  input#tlemail {
+    @extend %card;
+    border: solid 1px #ccc;
+    padding: 0 $gap2;
+    font-weight: normal;
+    @include radius($radius, 0, 0, $radius, irregular);
+  }
+  input.btn {
+    text-align: center;
+  }
+
 }
 section > {
   p, ul, ol, h1, h2, h3 {
@@ -109,33 +140,33 @@ section > {
 }
 .projects {
  @media screen and (min-width: $container) {
- display: grid;
-  grid-template-columns: repeat(3, 1fr);
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
  }
-  .project {
-    @extend %border;
-    margin-bottom: 0;
-    & > .title {
-      margin-top: 0;
-    }
-    &:before {
-      content:  "";
-      height: $gap12;
-      display: block;
-      margin-bottom: $gap2;
-background-size: contain;
-background-repeat: no-repeat;
-    }
-          &:first-of-type:before {
-        background-image: url(../images/map.svg);
-      }
-                &:nth-of-type(2):before {
-        background-image: url(../images/drill.svg);
-      }
-            &:last-of-type:before {
-        background-image: url(../images/stethoscope.svg);
-      }
+ .project {
+  @extend %border;
+  margin-bottom: 0;
+  & > .title {
+    margin-top: 0;
   }
+  &:before {
+    content:  "";
+    height: $gap12;
+    display: block;
+    margin-bottom: $gap2;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  &:first-of-type:before {
+    background-image: url(../images/exocortex.svg);
+  }
+  &:nth-of-type(2):before {
+    background-image: url(../images/object.svg);
+  }
+  &:last-of-type:before {
+    background-image: url(../images/grading.svg);
+  }
+}
 }
 
 

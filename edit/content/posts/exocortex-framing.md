@@ -1,7 +1,8 @@
 ---
-title:       Exocortex, Framing
+title:       Framing
 slug:        exocortex-framing
-template:    post.hbs
+template:    exocortex.hbs
+project: exocortex
 tags:        lorem ipsum dolor framing
 date:        2018-07-11
 author:      nonlinear
@@ -12,8 +13,8 @@ author:      nonlinear
 ### Goals
 
 - **Augmented Memory**
-   - phone numbers, addresses, project templates, all at your fingertips
-- **Privacy-first**
+   - phone numbers, addresses, project templates, all at your fingertips across all devices.
+- **Zero Knowledge**
    - no cloud, think of a system *a la* crypto wallet or 1password vault
 - **Last Mile**
    - application runs on all major systems (mac, linux, windows) and mobiles (android, iphone, as a keyboard)
@@ -57,3 +58,10 @@ author:      nonlinear
 - letter templates
 - Any kind of decision trees (customer service, troubleshooting, procedures)
 - complex syntax
+
+### Next Steps
+
+- list of research
+  - competition (walkthrough of existing autocompletes, snippets)
+  - security
+  - user research
