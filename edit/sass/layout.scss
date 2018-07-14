@@ -114,13 +114,11 @@ footer.footer, .content header, .method {
 footer.footer {
   margin-bottom: 0;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
   align-items: center;
 
 }
 form.subscribe .btn-group {
-  grid-template-columns: 1fr 1fr;
-
   input#tlemail {
     @extend %card;
     border: solid 1px #ccc;
@@ -128,8 +126,8 @@ form.subscribe .btn-group {
     font-weight: normal;
     @include radius($radius, 0, 0, $radius, irregular);
   }
-  input.btn {
-    text-align: center;
+  button.btn i {
+      font-size: $fs4;
   }
 
 }

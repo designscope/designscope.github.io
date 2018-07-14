@@ -1,6 +1,6 @@
 .btn-group {
   display: grid;
-  grid-template-columns: 80% 20%;
+  grid-template-columns: 1fr 40px;
   .btn:not(.dropdown-toggle) {
     text-align: left;
   }
