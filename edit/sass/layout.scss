@@ -121,13 +121,15 @@ footer.footer {
 form.subscribe .btn-group {
   input#tlemail {
     @extend %card;
+    display: inline-block;
     border: solid 1px #ccc;
-    padding: 0 $gap2;
+    border-right: 0;
+    padding: $gap2;
     font-weight: normal;
     @include radius($radius, 0, 0, $radius, irregular);
   }
   button.btn i {
-      font-size: $fs4;
+      font-size: $fs5;
   }
 
 }

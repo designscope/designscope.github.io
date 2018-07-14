@@ -1,16 +1,16 @@
 .btn-group {
   display: grid;
-  grid-template-columns: 1fr 40px;
+  grid-template-columns: 1fr $gap8;
+  align-items: center;
   .btn:not(.dropdown-toggle) {
     text-align: left;
   }
   .dropdown-toggle i.fa {
-padding-top: $gap;
+padding: 0;
   }
 }
 .btn-group, .btn {
 font-weight: bold;
-
   text-transform: uppercase;
 }
 
