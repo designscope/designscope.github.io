@@ -1,8 +1,8 @@
 ---
 title:       Framing
 slug:        exocortex-framing
-template:    exocortex.hbs
-project: exocortex
+template:    project.hbs
+project:     exocortex
 tags:        lorem ipsum dolor framing
 date:        2018-07-11
 author:      nonlinear

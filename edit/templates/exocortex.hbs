@@ -1,17 +1,7 @@
 {{> header}}
-<section class="intro">
-  <a href="/" class="logo exocortex"><span>{{site.title}}</span>
-  exocortex</a>
-</section>
 {{#post}}
-<section class="header">
-    <h1>{{title}}</h1>
-    <p class="post-meta">
-        by {{author.name}} on {{date format="MMMM Do YYYY"}}
-        <br>
-        {{#if tags}}{{{tags}}}{{/if}}
-    </p>
-</section>
+{{> project project='exocortex'}}
+
 <section class="content">
     {{{body}}}
 </section>

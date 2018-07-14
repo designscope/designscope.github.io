@@ -1,0 +1,12 @@
+<section class="intro">
+ {{#if project}}
+   <a href="/" class="logo {{project}}"><span>{{site.title}}</span>
+  {{project}}</a>
+    {{/if}}
+    <h1>{{title}}</h1>
+    <p class="post-meta">
+        by {{author.name}} on {{date format="MMMM Do YYYY"}}
+        <br>
+        {{#if tags}}{{{tags}}}{{/if}}
+    </p>
+</section>
