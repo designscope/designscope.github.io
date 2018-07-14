@@ -71,17 +71,26 @@ h3 {
   font-size: $fs8;
 }
 a.logo {
-  font-size: $fs13;
+
+  .intro:not(.project) & {
+    font-size: $fs13;
+  background-image: url(../images/compass.svg);
+  background-repeat: no-repeat;
+  margin-left: ($gap9 * -1);
+  background-size: $gap10 $gap10;
+  margin: $gap4 0;
+  padding: 0 $gap2 0 $gap12;
+  }
+   .intro.project & {
+    font-size: $fs7;
+  padding: 0 $gap2;
+margin: 0;
+  margin-top: $gap4;
+  }
   font-family: $font-title;
   text-transform: uppercase;
   background-color: #fff;
-  background-image: url(../images/compass.svg);
-  background-repeat: no-repeat;
-  padding: 0 $gap2 0 $gap12;
   line-height: 100%;
-  margin: $gap4 0;
-  margin-left: ($gap9 * -1);
-  background-size: $gap10 $gap10;
   background-position: left center;
   display: inline-block;
   border: none;
