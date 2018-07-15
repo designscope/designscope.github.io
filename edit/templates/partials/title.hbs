@@ -5,7 +5,35 @@
       <h1>{{title}}</h1>
       </div>
  <ul class="meta">
-      <li>{{author.name}}</li>
+      <li class="{{author}}">
+        <div class="avatar"></div>
+      <div class="description">
+        {{author.name.first}} {{author.name.last}}
+<!-- for divider, use <li class="divider"></li> -->
+<div class="dropdown">
+  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+    More info
+  </a>
+  <div class="dropdown-menu">
+    {{#if author.email}}
+    <a href="mailto:{{author.email}}">email</a>
+    {{/if}}
+    {{#if author.site}}
+    <a href="{{author.site}}">site</a>
+    {{/if}}
+    {{#if author.twitter}}
+    <a href="http://twitter.com/{{author.twitter}}">twitter</a>
+    {{/if}}
+    {{#if author.github}}
+    <a href="http://github.com/{{author.github}}">github</a>
+    {{/if}}
+    {{#if author.instagram}}
+    <a href="http://instagram.com/{{author.instagram}}">instagram</a>
+    {{/if}}
+  </div>
+</div>
+      </div>
+      </li>
       <li>{{date format="MMMM Do YYYY"}}</li>
       {{#if tags}}<li>{{{tags}}}</li>{{/if}}
  </ul>

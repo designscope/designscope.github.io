@@ -32,7 +32,6 @@ status: draft
 
 ## TODO // John
 
-
 - Turn recorded convo to audio
 - Edit podcast pilot/test
 - Deployment script

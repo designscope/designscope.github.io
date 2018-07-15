@@ -17,7 +17,7 @@
 
 
 body {
-  background-image: url(../images/grid--inverted.svg);
+  background-image: url(../images/pattern/grid--inverted.svg);
   @include grid($duration: 2s);
   background-color: $c-secondary;
   @include transition;
@@ -74,7 +74,7 @@ a.logo {
 
   .intro:not(.post) & {
     font-size: $fs13;
-  background-image: url(../images/compass.svg);
+  background-image: url(../images/icon/logo.svg);
   background-repeat: no-repeat;
   margin-left: ($gap9 * -1);
   background-size: $gap10 $gap10;
@@ -102,7 +102,7 @@ a.logo {
     line-height: 100%;
   }
   &.exocortex {
-    background-image: url(../images/exocortex.svg);
+    background-image: url(../images/icon/exocortex.svg);
   }
   &.exocortex, &.object {
     background-position: left bottom;
@@ -186,13 +186,13 @@ section:not(.intro) > {
     background-repeat: no-repeat;
   }
   &:first-of-type:before {
-    background-image: url(../images/exocortex.svg);
+    background-image: url(../images/icon/exocortex.svg);
   }
   &:nth-of-type(2):before {
-    background-image: url(../images/object.svg);
+    background-image: url(../images/icon/object.svg);
   }
   &:last-of-type:before {
-    background-image: url(../images/grading.svg);
+    background-image: url(../images/icon/grading.svg);
   }
 }
 }
@@ -247,4 +247,11 @@ section:not(.intro) > {
   .tags {
     float: right;
   }
+}
+
+.avatar {
+background-image: './images/avatar/nonlinear.jpg';
+background-size: contain;
+  height: $gap6;
+  width: $gap6;
 }
