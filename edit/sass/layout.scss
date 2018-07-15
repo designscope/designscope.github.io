@@ -129,18 +129,16 @@ footer.footer {
 .intro.post {
     display: grid;
   grid-template-columns: 2fr 1fr;
-  align-items: center;
+  align-items: top;
   margin-top: $gap4;
   @include border;
   padding: $gap2;
-   align-items: end;
+  align-items: top;
   h1, h2, h3, h4 {
     margin: 0;
     padding: 0;
   }
-  .meta {
-    @include reset(list);
-  }
+
 
 }
 form.subscribe .btn-group {
@@ -234,7 +232,7 @@ section:not(.intro) > {
 }
 
 
-.links, .meta {
+.links {
   font-size: $fs3;
   a {
     text-decoration: underline;
@@ -248,10 +246,38 @@ section:not(.intro) > {
     float: right;
   }
 }
-
-.avatar {
-background-image: './images/avatar/nonlinear.jpg';
-background-size: contain;
-  height: $gap6;
-  width: $gap6;
+.author {
+  font-size: $fs3;
+  margin-bottom: 0;
+  .description i.fa {
+float: right;
+padding-right: $gap2;
+margin-top: ($gap2 * -1);
 }
+  .collapse-trigger {
+   display: grid;
+  grid-template-columns: $gap9 1fr;
+  align-items: center;
+
+
+}
+.social {
+  a {
+    display: block;
+    margin-left: $gap9;
+    text-decoration: underline;
+    i.fa {
+      padding-right: $gap;
+    }
+  }
+}
+   .avatar {
+
+background-size: contain;
+@include radius(50%);
+  height: $gap8;
+  width: $gap8;
+}
+}
+
+

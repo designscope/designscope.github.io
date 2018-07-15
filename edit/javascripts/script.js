@@ -1,1 +1,1 @@
-Barba.Pjax.start();
+$('[data-toggle="popover"]').popover()

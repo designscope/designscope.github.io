@@ -16,7 +16,8 @@
     "nonlinear": {
       "name": {
         "first": "Nicholas",
-        "last": "Frota"
+        "last": "Frota",
+        "username": "nonlinear"
       },
       "bio": "big data designer",
       "email": "info@nicholasfrota.com",
@@ -28,7 +29,8 @@
         "jdmar3": {
           "name": {
         "first": "John",
-        "last": "D Martin 3"
+        "last": "D Martin 3",
+        "username": "jdmar3"
       },
       "bio": "InfoSci PhD student. I research how we embed our epistemology and worldview into the things we create. Radical queer 🏳️‍🌈 anti-capitalist ☭ http://pronoun.is/he",
       "email": "john.d.martin.iii@gmail.com",

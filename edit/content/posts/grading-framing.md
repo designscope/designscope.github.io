@@ -1,24 +1,28 @@
 ---
-title:       Continuous Grading, Framing
+title:       Framing
 slug:        grading-framing
-template:    post.hbs
+template:    grading.hbs
 tags:        lorem ipsum dolor framing
 date:        2018-07-11
-author:      nonlinear
+author:      jdmar3
 ---
+
+### Abstract
 
 ### Goals
 
-> pending
+pending
 
 ### Audiences
 
-> pending
+pending
+
+### Monetization
 
 ### Challenges
 
-> pending
+pending
 
 ### Possibilities
 
-> pending
+pending

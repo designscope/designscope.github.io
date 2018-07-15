@@ -1,41 +1,47 @@
-<section class="intro  {{#if project}}post{{/if}}">
+<section class="intro {{#if project}}post{{/if}}">
   <div class="title">
-   <a href="/" class="logo">{{site.title}}{{#if project}}: {{project}}{{/if}}</a>
-{{#if project}}
-      <h1>{{title}}</h1>
-      </div>
- <ul class="meta">
-      <li class="{{author}}">
-        <div class="avatar"></div>
-      <div class="description">
-        {{author.name.first}} {{author.name.last}}
-<!-- for divider, use <li class="divider"></li> -->
-<div class="dropdown">
-  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-    More info
+   <a href="/" class="logo">{{site.title}}{{#if project}}: {{name}}{{/if}}</a>
+   {{#if project}}
+   <h1>{{title}}</h1>
+   {{#if tags}}<p class="links">{{{tags}}}</p>{{/if}}
+ </div>
+ <div class="panel author">
+  <a data-toggle="collapse" href="#collapseOne" class="collapse-trigger">
+    <div class="avatar" style="background-image: url(../images/avatar/{{author.name.username}}.jpg)"></div>
+    <div class="description">
+      {{author.name.first}} {{author.name.last}}
+      <br>
+      {{date format="MMMM Do YYYY"}}
+      <i class="fa fa-caret-down"></i>
+    </div>
   </a>
-  <div class="dropdown-menu">
+  <div id="collapseOne" class="collapse social">
     {{#if author.email}}
-    <a href="mailto:{{author.email}}">email</a>
-    {{/if}}
-    {{#if author.site}}
-    <a href="{{author.site}}">site</a>
-    {{/if}}
-    {{#if author.twitter}}
-    <a href="http://twitter.com/{{author.twitter}}">twitter</a>
-    {{/if}}
-    {{#if author.github}}
-    <a href="http://github.com/{{author.github}}">github</a>
-    {{/if}}
-    {{#if author.instagram}}
-    <a href="http://instagram.com/{{author.instagram}}">instagram</a>
-    {{/if}}
+    <!-- use %0D%0A for line breaks -->
+
+    <a href="mailto:{{author.email}}?subject={{name}}: {{title}}">
+      <i class="fa fa-envelope"></i>email</a>
+      {{/if}}
+      {{#if author.site}}
+      <a href="{{author.site}}"><i class="fa fa-globe" target="site"></i>site</a>
+      {{/if}}
+      {{#if author.twitter}}
+      <a href="http://twitter.com/{{author.twitter}}" target="twitter"><i class="fa fa-twitter"></i>twitter</a>
+      {{/if}}
+      {{#if author.github}}
+      <a href="http://github.com/{{author.github}}" target="github"><i class="fa fa-github"></i>github</a>
+      {{/if}}
+      {{#if author.instagram}}
+      <a href="http://instagram.com/{{author.instagram}}" target="instagram"><i class="fa fa-instagram"></i>instagram</a>
+      {{/if}}
+
+    </div>
   </div>
-</div>
-      </div>
-      </li>
-      <li>{{date format="MMMM Do YYYY"}}</li>
-      {{#if tags}}<li>{{{tags}}}</li>{{/if}}
- </ul>
-    {{/if}}
+  <div class="dropdown author {{author}}">
+    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+
+    </a>
+    <div class="dropdown-menu"></div>
+  </div>
+  {{/if}}
 </section>
