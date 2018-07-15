@@ -19,10 +19,11 @@ status: draft
 
 - Subfolders on permalinks
 - Test rss feed for podcast
-- Author, more than one
 - Framing for object library
+- ~~author loop~~
 - Responsive design
-- Partialize elements
+- phases on each title
+- ~~Partialize elements~~
 - ~~Move v2 to design scope~~
 - ~~Fix fonts path~~
 - ~~Tile hex color fix~~
