@@ -9,11 +9,12 @@
 
 ## TODO // Nicholas
 
+- title and icons on post
 - Subfolders on permalinks
 - Test rss feed for podcast
 - Framing for object library
 - ~~author loop~~
-- Responsive design
+- Responsive desidggn
 - phases on each title
 - ~~Partialize elements~~
 - ~~Move v2 to design scope~~
