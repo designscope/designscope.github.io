@@ -15,3 +15,51 @@
 @import "functions";
 @import "layout";
 @import "forms";
+@import "method";
+
+
+.diagram {
+ display: grid;
+ grid-template-columns: ($phase * 0.7) $phase repeat(3, ($phase * 2.1)) 1fr;
+
+ .phase {
+ height: ($phase * 2);
+     &.framing a {
+      z-index: 10;
+      @include rotate(7);
+      margin-top: -10px;
+    }
+  .arrow {
+    background-color: #b3b3b3;
+    background-image: url(../images/arrow.svg);
+    height: $gap10;
+    float: left;
+    width: ($gap10 / 2);
+    background-size: cover;
+    background-position: right center;
+    &.feedback, &.curve {
+      display: none;
+    }
+  }
+  a {
+background-color: $c-phase;
+      display: inline-block;
+      background-color: $c-phase;
+      @include transition;
+      @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.08));
+      &:hover {
+       @include scale(1.1);
+      }
+    &:not(.feedback) {
+      height: $phase;
+      width: $phase;
+    }
+        &.feedback {
+      height: $gap6;
+      width: $gap6;
+      float: right;
+      @include radius(50%);
+    }
+  }
+}
+}

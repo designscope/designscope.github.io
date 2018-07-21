@@ -7,11 +7,15 @@ $prefixes: webkit moz ms o;
 $gap: 6px;
 $fs: 4px;
 $container: 700px;
+$phase: ($container * .1);
 $radius: 3px;
 
 $c-bg: white;
 $c-primary: #0D2277;
 $c-secondary: LightSteelBlue;
+
+$c-phase: #939393;
+$c-phase-open: red;
 
 $font-title: rakesly;
 $font-brand: UniversLTStd;

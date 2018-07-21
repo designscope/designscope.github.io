@@ -71,21 +71,20 @@ h3 {
   font-size: $fs8;
 }
 a.logo {
-
   .intro:not(.post) & {
     font-size: $fs13;
-  background-image: url(../images/icon/logo.svg);
-  background-repeat: no-repeat;
-  margin-left: ($gap9 * -1);
-  background-size: $gap10 $gap10;
-  margin: $gap4 0;
-  padding: 0 $gap2 0 $gap12;
+    background-image: url(../images/icon/logo.svg);
+    background-repeat: no-repeat;
+    margin: $gap4 0;
+    margin-left: ($gap9 * -1);
+    background-size: $gap10 $gap10;
+    padding: 0 $gap2 0 $gap12;
     &:hover {
-    margin-left: ($gap10 * -1);
-    padding-left: $gap13;
+      margin-left: ($gap10 * -1);
+      padding-left: $gap13;
+    }
   }
-  }
-   .intro.post & {
+  .intro.post & {
     font-size: $fs6;
   }
   font-family: $font-title;
@@ -127,7 +126,7 @@ footer.footer {
 
 }
 .intro.post {
-    display: grid;
+  display: grid;
   grid-template-columns: 2fr 1fr;
   align-items: top;
   margin-top: $gap4;
@@ -152,7 +151,7 @@ form.subscribe .btn-group {
     @include radius($radius, 0, 0, $radius, irregular);
   }
   button.btn i {
-      font-size: $fs5;
+    font-size: $fs5;
   }
 
 }
@@ -161,8 +160,8 @@ section:not(.intro) > {
     @include border;
   }
   h1, h2, h3, h4 {
- @include border;
-  }
+   @include border;
+ }
 }
 .projects {
  @media screen and (min-width: $container) {
@@ -196,32 +195,7 @@ section:not(.intro) > {
 }
 
 
-.method {
- display: grid;
- grid-template-columns: repeat(6, 1fr);
 
- a {
-  counter-increment: my-awesome-counter;
-  display: block;
-  text-align: center;
-  font-family: $font-title;
-  color: $c-primary;
-  text-transform: uppercase;
-  &::before {
-    content: "";
-    height: $gap6;
-    width: $gap6;
-    font-size: $fs6;
-    padding-top: 1px;
-    margin: 0 auto $gap auto;
-    @include radius(50%);
-    display: block;
-    color: $c-bg;
-    background-color: darken(red, 20%);
-    content: counter(my-awesome-counter);
-  }
-}
-}
 
 .container {
   width: $container;
@@ -250,18 +224,18 @@ section:not(.intro) > {
   font-size: $fs3;
   margin-bottom: 0;
   .description i.fa {
-float: right;
-padding-right: $gap2;
-margin-top: ($gap2 * -1);
-}
+    float: right;
+    padding-right: $gap2;
+    margin-top: ($gap2 * -1);
+  }
   .collapse-trigger {
    display: grid;
-  grid-template-columns: $gap9 1fr;
-  align-items: center;
+   grid-template-columns: $gap9 1fr;
+   align-items: center;
 
 
-}
-.social {
+ }
+ .social {
   a {
     display: block;
     margin-left: $gap9;
@@ -271,10 +245,10 @@ margin-top: ($gap2 * -1);
     }
   }
 }
-   .avatar {
+.avatar {
 
-background-size: contain;
-@include radius(50%);
+  background-size: contain;
+  @include radius(50%);
   height: $gap8;
   width: $gap8;
 }

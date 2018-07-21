@@ -14,7 +14,7 @@
 - Test rss feed for podcast
 - Framing for object library
 - ~~author loop~~
-- Responsive desidggn
+- Responsive design
 - phases on each title
 - ~~Partialize elements~~
 - ~~Move v2 to design scope~~
