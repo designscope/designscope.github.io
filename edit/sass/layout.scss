@@ -64,8 +64,8 @@ a {
  grid-template-columns: 2fr 1fr;
  align-items: center;
  p {
-  font-size: $fs4;
-  color: #999;
+  font-size: $fs3;
+  color: $c-primary;
   margin: 0;
   line-height: 110%;
   z-index: 100;
