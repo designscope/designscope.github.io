@@ -9,11 +9,15 @@ $feedback: ($phase * .7);
 .tab-pane {
   padding-top: $gap2;
   .description {
-    display: grid;
+      @media screen and (min-width: $container) {
+display: grid;
     grid-template-columns: 1fr 3fr;
     h1, h2, h3, h4 {
       margin: 0;
     }
+  }
+
+
   }
 }
 

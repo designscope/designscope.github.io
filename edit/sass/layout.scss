@@ -35,6 +35,13 @@ body {
     position: fixed;
     z-index: 1000;
     left: 0;
+
+  }
+        @media screen and (max-width: $container) {
+   border: solid $gap4 $c-bg;
+ &:before, &:after {
+    height: $gap4;
+  }
   }
   &:before {
     top: 0;
@@ -213,8 +220,10 @@ section:not(.intro) > {
 
 
 
-.container {
+article.main {
   width: $container;
+  padding: 0 30px;
+  margin: 0 auto;
   @media screen and (max-width: $container) {
     width: 100%;
 
