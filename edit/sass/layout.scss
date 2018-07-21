@@ -67,9 +67,12 @@ a {
 }
 
 .cue {
+
+  @media screen and (min-width: $bp) {
  display: grid;
  grid-template-columns: 2fr 1fr;
  align-items: center;
+  }
  p {
   font-size: $fs3;
   color: $c-primary;
@@ -78,6 +81,9 @@ a {
   z-index: 100;
   font-family: $font-text;
   text-transform: none;
+    @media screen and (max-width: $bp) {
+margin-top: $gap;
+  }
 }
 }
 
