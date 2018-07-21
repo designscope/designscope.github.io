@@ -17,6 +17,15 @@
 @import "forms";
 @import "method";
 
+.tab-content {
+  .description {
+    display: grid;
+     grid-template-columns: 1fr 3fr;
+     h1, h2, h3, h4 {
+      margin: 0;
+     }
+  }
+}
 
 .diagram {
  display: grid;
@@ -46,13 +55,15 @@ background-color: $c-phase;
       display: inline-block;
       background-color: $c-phase;
       @include transition;
-      @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.08));
+      @include shadow(box, 3px 3px 0 rgba(0, 0, 0, 0.08));
       &:hover {
        @include scale(1.1);
+       @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.1));
       }
     &:not(.feedback) {
       height: $phase;
       width: $phase;
+      @include radius($radius);
     }
         &.feedback {
       height: $gap6;

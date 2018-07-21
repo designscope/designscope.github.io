@@ -59,16 +59,31 @@ a {
   @include transition;
 }
 
+.cue {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     align-items: center;
+     p {
+  font-size: $fs3;
+  color: #999;
+  z-index: 100;
+  font-family: $font-text;
 
+  text-transform: none;
+}
+}
 
 h1 {
   font-size: $fs13;
 }
 h2 {
-  font-size: $fs10;
+  font-size: $fs11;
 }
 h3 {
   font-size: $fs8;
+}
+h4 {
+  font-size: $fs6;
 }
 a.logo {
   .intro:not(.post) & {
