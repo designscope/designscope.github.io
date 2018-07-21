@@ -13,8 +13,11 @@ $c-bg: white;
 $c-primary: #0D2277;
 $c-secondary: LightSteelBlue;
 
-$c-phase: #939393;
-$c-phase-open: red;
+$c-phase: $c-secondary;
+$c-phase-open: $c-primary;
+
+$c-arrow: lighten($c-phase, 10%);
+$c-arrow-open: lighten($c-phase-open, 10%);
 
 $font-title: rakesly;
 $font-brand: UniversLTStd;

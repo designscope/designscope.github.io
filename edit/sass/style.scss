@@ -17,11 +17,11 @@
 @import "forms";
 @import "method";
 
-$phase: ($container * .1);
-$method: ($phase * 2.1);
+$phase: ($container * .085);
+$method: ($phase * 2.6);
 $arrow: $gap4;
 $curve: ($method - ($arrow * 2));
-$feedback: ($phase * .6);
+$feedback: ($phase * .7);
 
 .tab-content {
   .description {
@@ -35,29 +35,29 @@ $feedback: ($phase * .6);
 
 .diagram {
  display: grid;
- grid-template-columns: ($phase * 0.7) $phase repeat(3, ($phase * 2.1)) 1fr;
+ grid-template-columns: ($phase * 0.7) $phase repeat(3, $method) 1fr;
 
  .phase {
    height: $method;
    background: none;
    .arrow {
 
-    background-color: #ccc;
+    background-color: $c-arrow;
     background-repeat: no-repeat;
     &.curve, &.feedback {
       height: ($curve / 2);
       width: $curve;
       position: absolute;
-      margin-left: ($arrow + $gap);
+      margin-left: ($arrow + $gap2);
       z-index: 0;
     }
     &.curve {
       background-image: url(../images/arrow-curve.svg);
-      margin-top: $gap2;
+      margin-top: $gap4;
     }
     &.feedback {
       background-image: url(../images/arrow-feedback.svg);
-      margin-top: (($curve - $gap3));
+      margin-top: (($curve - $gap5));
     }
     &:not(.curve):not(.feedback) {
       margin-top: (($method - $phase) / 2);
@@ -76,10 +76,7 @@ $feedback: ($phase * .6);
     background-color: $c-phase;
     @include transition;
     @include shadow(box, 3px 3px 0 rgba(0, 0, 0, 0.08));
-    &:hover {
-     @include scale(1.1);
-     @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.1));
-   }
+
    &:not(.feedback) {
     height: $phase;
     width: $phase;
@@ -103,5 +100,8 @@ $feedback: ($phase * .6);
 &.scope a {
   margin-left: 0;
 }
+a:hover {
+     @include scale(1.05);
+   }
 }
 }
