@@ -17,13 +17,19 @@
 @import "forms";
 @import "method";
 
+$phase: ($container * .1);
+$method: ($phase * 2.1);
+$arrow: $gap4;
+$curve: ($method - ($arrow * 2));
+$feedback: ($phase * .6);
+
 .tab-content {
   .description {
     display: grid;
-     grid-template-columns: 1fr 3fr;
-     h1, h2, h3, h4 {
+    grid-template-columns: 1fr 3fr;
+    h1, h2, h3, h4 {
       margin: 0;
-     }
+    }
   }
 }
 
@@ -32,45 +38,70 @@
  grid-template-columns: ($phase * 0.7) $phase repeat(3, ($phase * 2.1)) 1fr;
 
  .phase {
- height: ($phase * 2);
-     &.framing a {
-      z-index: 10;
-      @include rotate(7);
-      margin-top: -10px;
+   height: $method;
+   background: none;
+   .arrow {
+
+    background-color: #ccc;
+    background-repeat: no-repeat;
+    &.curve, &.feedback {
+      height: ($curve / 2);
+      width: $curve;
+      position: absolute;
+      margin-left: ($arrow + $gap);
+      z-index: 0;
     }
-  .arrow {
-    background-color: #b3b3b3;
-    background-image: url(../images/arrow.svg);
-    height: $gap10;
-    float: left;
-    width: ($gap10 / 2);
-    background-size: cover;
-    background-position: right center;
-    &.feedback, &.curve {
-      display: none;
+    &.curve {
+      background-image: url(../images/arrow-curve.svg);
+      margin-top: $gap2;
+    }
+    &.feedback {
+      background-image: url(../images/arrow-feedback.svg);
+      margin-top: (($curve - $gap3));
+    }
+    &:not(.curve):not(.feedback) {
+      margin-top: (($method - $phase) / 2);
+      background-image: url(../images/arrow.svg);
+      background-size:  $gap16 $gap16;
+      background-position: right center;
+      height: $phase;
+      float: left;
+      width: $arrow;
     }
   }
   a {
-background-color: $c-phase;
-      display: inline-block;
-      background-color: $c-phase;
-      @include transition;
-      @include shadow(box, 3px 3px 0 rgba(0, 0, 0, 0.08));
-      &:hover {
-       @include scale(1.1);
-       @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.1));
-      }
-    &:not(.feedback) {
-      height: $phase;
-      width: $phase;
-      @include radius($radius);
-    }
-        &.feedback {
-      height: $gap6;
-      width: $gap6;
-      float: right;
-      @include radius(50%);
-    }
+    background-color: $c-phase;
+    position: absolute;
+    z-index: 5;
+    background-color: $c-phase;
+    @include transition;
+    @include shadow(box, 3px 3px 0 rgba(0, 0, 0, 0.08));
+    &:hover {
+     @include scale(1.1);
+     @include shadow(box, 5px 5px 0 rgba(0, 0, 0, 0.1));
+   }
+   &:not(.feedback) {
+    height: $phase;
+    width: $phase;
+    @include radius($radius);
+    margin-top: (($method - $phase) / 2);
   }
+  &.feedback {
+    margin-top: $gap7;
+    height: $feedback;
+    width: $feedback;
+    @include radius(50%);
+    margin-top: (($method - $feedback) / 2);
+    margin-left: ($method - $feedback - $arrow);
+  }
+}
+&.framing a {
+  z-index: 10;
+  @include rotate(7);
+  margin-top: ((($method - $phase) / 2) - 15);
+}
+&.scope a {
+  margin-left: 0;
+}
 }
 }
