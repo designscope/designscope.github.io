@@ -1,0 +1,91 @@
+$phase: ($container * .085);
+$method: ($phase * 2.6);
+$arrow: $gap4;
+$curve: ($method - ($arrow * 2));
+$feedback: ($phase * .7);
+
+
+
+.tab-content {
+  .description {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    h1, h2, h3, h4 {
+      margin: 0;
+    }
+  }
+}
+
+.diagram {
+ display: grid;
+ grid-template-columns: ($phase * 0.7) $phase repeat(3, $method) 1fr;
+
+ .phase {
+   height: $method;
+   background: none;
+   .arrow {
+
+    background-color: $c-arrow;
+    background-repeat: no-repeat;
+    &.curve, &.feedback {
+      height: ($curve / 2);
+      width: $curve;
+      position: absolute;
+      margin-left: ($arrow + $gap2);
+      z-index: 0;
+    }
+    &.curve {
+      background-image: url(../images/arrow-curve.svg);
+      margin-top: $gap4;
+    }
+    &.feedback {
+      background-image: url(../images/arrow-feedback.svg);
+      margin-top: (($curve - $gap5));
+    }
+    &.simple {
+      margin-top: (($method - $phase) / 2);
+      background-image: url(../images/arrow.svg);
+      background-size:  $gap16 $gap16;
+      background-position: right center;
+      height: $phase;
+      float: left;
+      width: $arrow;
+    }
+  }
+  a {
+    background-color: $c-phase;
+    position: absolute;
+    z-index: 5;
+    background-color: $c-phase;
+    @include transition;
+    @include shadow(box, 3px 3px 0 rgba(0, 0, 0, 0.08));
+
+   &.simple {
+    height: $phase;
+    width: $phase;
+    @include radius($radius);
+    margin-top: (($method - $phase) / 2);
+  }
+  &.feedback {
+    margin-top: $gap7;
+    height: $feedback;
+    width: $feedback;
+    @include radius(50%);
+    margin-top: (($method - $feedback) / 2);
+    margin-left: ($method - $feedback - $arrow);
+  }
+}
+&.framing a {
+  z-index: 10;
+  @include rotate(7);
+  margin-top: ((($method - $phase) / 2) - 15);
+}
+&.scope a {
+  margin-left: 0;
+}
+a:hover {
+     @include scale(1.05);
+   }
+}
+}
+

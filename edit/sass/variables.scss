@@ -13,19 +13,19 @@ $c-bg: white;
 $c-primary: #0D2277;
 $c-secondary: LightSteelBlue;
 
-$c-phase: $c-secondary;
-$c-phase-open: $c-primary;
+$c-phase: #eee;
+$c-phase-open: $c-secondary;
 
-$c-arrow: lighten($c-phase, 10%);
-$c-arrow-open: lighten($c-phase-open, 10%);
+$c-arrow: #eee;
+$c-arrow-open: #999;
 
 $font-title: rakesly;
 $font-brand: UniversLTStd;
 $font-text: Univers-light-normal;
 
-$animation-duration: 1s !default;
+$animation-duration: 2s;
 $animation-function: ease !default;
-$animation-delay: 0.2s !default;
+$animation-delay: 0.4s;
 $animation-count: 1 !default;
 $animation-fill: both !default;
 $animation-visibility: hidden !default;

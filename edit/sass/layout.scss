@@ -60,15 +60,16 @@ a {
 }
 
 .cue {
-     display: grid;
-     grid-template-columns: 2fr 1fr;
-     align-items: center;
-     p {
-  font-size: $fs3;
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ align-items: center;
+ p {
+  font-size: $fs4;
   color: #999;
+  margin: 0;
+  line-height: 110%;
   z-index: 100;
   font-family: $font-text;
-
   text-transform: none;
 }
 }
@@ -268,5 +269,4 @@ section:not(.intro) > {
   width: $gap8;
 }
 }
-
 
