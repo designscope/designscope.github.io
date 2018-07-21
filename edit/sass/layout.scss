@@ -148,6 +148,12 @@ footer.footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  .links a {
+    i {
+      display: none;
+      padding-right: $gap;
+    }
+  }
 
 }
 .intro.post {
