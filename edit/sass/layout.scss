@@ -37,7 +37,7 @@ body {
     left: 0;
 
   }
-        @media screen and (max-width: $container) {
+        @media screen and (max-width: $bp) {
    border: solid $gap4 $c-bg;
  &:before, &:after {
     height: $gap4;
@@ -132,10 +132,6 @@ a.logo {
   }
 }
 
-article {
-  @include fadeInUp($duration: 1s, $delay: $animation-delay);
-  @include transition;
-}
 
 .content header, .method {
   @include border;
@@ -187,7 +183,7 @@ section:not(.intro) > {
  }
 }
 .projects {
- @media screen and (min-width: $container) {
+ @media screen and (min-width: $bp) {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
  }
@@ -222,10 +218,12 @@ section:not(.intro) > {
 
 article.main {
   width: $container;
-  padding: 0 30px;
   margin: 0 auto;
-  @media screen and (max-width: $container) {
+    @include fadeInUp($duration: 1s, $delay: $animation-delay);
+  @include transition;
+  @media screen and (max-width: $bp) {
     width: 100%;
+    padding: 0 $gap4;
 
   }
 }

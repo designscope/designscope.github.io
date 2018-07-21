@@ -7,6 +7,7 @@ $prefixes: webkit moz ms o;
 $gap: 6px;
 $fs: 4px;
 $container: 700px;
+$bp: $container + ($gap * 20);
 $radius: 3px;
 
 $c-bg: white;
