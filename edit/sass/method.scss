@@ -65,7 +65,9 @@ display: grid;
     background-color: $c-phase;
     @include transition;
     border: solid 1px white;
-
+                 svg * {
+  stroke: $c-secondary;
+}
    &.simple {
     height: $phase;
     width: $phase;
@@ -115,6 +117,17 @@ a:hover {
    }
  }
 }
+@mixin open-icon($duration: $animation-duration, $function: $animation-function, $delay: $animation-delay, $count: $animation-count, $fill: $animation-fill, $visibility: $animation-visibility) {
+  @include animation(open-icon $duration $function $delay $count $fill);
+  @include visibility($visibility);
+  @at-root {
+    @include keyframes(open-icon) {
+      100% {
+       stroke: $c-primary;
+     }
+   }
+ }
+}
 
 @mixin open-arrow($duration: $animation-duration, $function: $animation-function, $delay: $animation-delay, $count: $animation-count, $fill: $animation-fill, $visibility: $animation-visibility) {
   @include animation(open-arrow $duration $function $delay $count $fill);
@@ -145,14 +158,13 @@ a:hover {
           color: $c-primary;
           font-size: $fs6;
         }
+              svg * {
+  @include open-icon($delay: ($animation-delay * 3));
+}
 
         &.simple,  &.feedback {
           @include open-phase($delay: ($animation-delay * 3));
-                 svg * {
-  stroke: $c-primary;
 
-
-}
         }
       }
     }
