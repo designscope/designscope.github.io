@@ -19,6 +19,9 @@ a.next {
    font-size: $fs3;
    text-align: right;
    display: block;
+   &:before {
+    content: "Next: "
+   }
    &, &:hover {
     text-decoration: underline;
     }
