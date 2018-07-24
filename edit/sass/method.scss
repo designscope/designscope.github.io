@@ -131,6 +131,15 @@ a:hover {
         }
       }
       a {
+        text-align: center;
+        vertical-align: center;
+        i.fa {
+          color: $c-primary;
+          font-size: $fs6;
+        }
+        &.simple {
+
+        }
         &.simple,  &.feedback {
           @include open-phase($delay: ($animation-delay * 3));
         }
