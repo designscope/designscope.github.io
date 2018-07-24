@@ -71,6 +71,10 @@ display: grid;
     width: $phase;
     @include radius($radius);
     margin-top: (($method - $phase) / 2);
+    svg {
+  height: $gap7;
+  padding-top: $gap2;
+}
   }
   &.feedback {
     margin-top: $gap7;
@@ -79,6 +83,10 @@ display: grid;
     @include radius(50%);
     margin-top: (($method - $feedback) / 2);
     margin-left: ($method - $feedback - $arrow);
+    svg {
+  height: $gap5;
+  padding-top: $gap;
+}
   }
 }
 &.framing a {
@@ -137,11 +145,14 @@ a:hover {
           color: $c-primary;
           font-size: $fs6;
         }
-        &.simple {
 
-        }
         &.simple,  &.feedback {
           @include open-phase($delay: ($animation-delay * 3));
+                 svg * {
+  stroke: $c-primary;
+
+
+}
         }
       }
     }

@@ -2,10 +2,12 @@
   <div class="diagram">
     <div class="phase open framing">
       <a href="#phase0" data-toggle="tab" class="simple">
+        {{> phase-framing}}
       </a>
     </div>
     <div class="phase open research">
       <a href="#phase1" data-toggle="tab" class="simple">
+        {{> phase-research}}
       </a>
     </div>
     <div class="phase open ideation">
@@ -13,8 +15,10 @@
       <div class="arrow curve"></div>
       <div class="arrow feedback"></div>
       <a href="#phase2" data-toggle="tab" class="simple">
+        {{> phase-ideation}}
       </a>
       <a href="#phase3" data-toggle="tab" class="feedback">
+        {{> phase-feedback}}
       </a>
 
     </div>
@@ -22,21 +26,29 @@
       <div class="arrow simple"></div>
       <div class="arrow curve"></div>
       <div class="arrow feedback"></div>
-      <a href="#phase4" data-toggle="tab" class="simple"></a>
+      <a href="#phase4" data-toggle="tab" class="simple">
+        {{> phase-flow}}
+      </a>
       <a href="#phase5" data-toggle="tab" class="feedback">
+        {{> phase-feedback}}
       </a>
     </div>
     <div class="phase open review feedback module">
       <div class="arrow simple"></div>
       <div class="arrow curve"></div>
       <div class="arrow feedback"></div>
-      <a href="#phase6" data-toggle="tab" class="simple"></a>
+      <a href="#phase6" data-toggle="tab" class="simple">
+        {{> phase-modules}}
+      </a>
       <a href="#phase7" data-toggle="tab" class="feedback">
+        {{> phase-feedback}}
       </a>
     </div>
     <div class="phase open review feedback scope">
       <div class="arrow simple"></div>
-      <a class="feedback" href="#phase8" data-toggle="tab" class="simple"></a>
+      <a class="feedback" href="#phase8" data-toggle="tab" class="simple">
+        {{> phase-scope}}
+      </a>
     </div>
   </div>
   <div id="myTabContent" class="tab-content">
