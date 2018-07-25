@@ -71,11 +71,21 @@ h1, h2, h3, h4, h5, h6, b {
 a {
   color: $c-primary;
   cursor: pointer;
+        i.fa {
+      padding-right: $gap;
+    }
   &:hover {
     text-decoration: none;
   }
   @include transition;
+  &:not(.btn) {
+
+      &:hover {
+        text-decoration: underline;
+    }
 }
+}
+
 
 .cue {
 
@@ -158,15 +168,7 @@ footer.footer {
   margin-bottom: 0;
   margin-top: $gap4;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  .links a {
-    i {
-      display: none;
-      padding-right: $gap;
-    }
-  }
-
+  grid-template-columns: 1fr 2fr;
 }
 .intro.post {
   display: grid;
@@ -189,12 +191,19 @@ form.subscribe .btn-group {
     display: inline-block;
     border: solid 1px #ccc;
     border-right: 0;
-    padding: $gap2;
+    padding: ($gap2 + 4) $gap2;
+@include placeholder {
+color: $c-secondary;
+}
     font-weight: normal;
     @include radius($radius, 0, 0, $radius, irregular);
   }
-  button.btn i {
+
+  button.btn {
+    text-align: center;
+    i {
     font-size: $fs5;
+  }
   }
 
 }
@@ -239,9 +248,6 @@ section:not(.intro) > {
 }
 a {
    display: block;
-        i.fa {
-        margin-right: $gap;
-      }
 }
    a:not(.btn) {
       font-size: $fs3;
@@ -292,16 +298,9 @@ article.main {
 .links {
   font-size: $fs3;
   a {
-    text-decoration: underline;
-    &:not(:last-of-type) {
-      border-right: solid 1px $c-secondary;
-      padding-right: $gap;
-      margin-right: $gap;
-    }
+ display: block;
   }
-  .tags {
-    float: right;
-  }
+
 }
 .author {
   font-size: $fs3;
@@ -315,6 +314,9 @@ article.main {
    display: grid;
    grid-template-columns: $gap9 1fr;
    align-items: center;
+   &, &:hover {
+    text-decoration: none;
+   }
 
 
  }
@@ -322,16 +324,22 @@ article.main {
   a {
     display: block;
     margin-left: $gap9;
-    text-decoration: underline;
-    i.fa {
-      padding-right: $gap;
-    }
   }
 }
 
 }
 
+.tags {
+  font-size: $fs3;
+  a {
+margin-left: $gap;
+&:not(:first-of-type) {
 
+  padding-left: $gap;
+  border-left: solid 1px $c-secondary;
+}
+}
+}
 .avatar {
 
   background-size: contain;

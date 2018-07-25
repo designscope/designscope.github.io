@@ -3,7 +3,9 @@
    <a href="/" class="logo">{{site.title}}{{#if project}}: {{name}}{{/if}}</a>
    {{#if project}}
    <h1>{{title}}</h1>
-   {{#if tags}}<p class="links">{{{tags}}}</p>{{/if}}
+   {{#if tags}}<div class="tags">
+ <i class="fa fa-tags"></i>
+   {{{tags}}}</div>{{/if}}
  </div>
  <div class="panel author">
   <a data-toggle="collapse" href="#collapseOne" class="collapse-trigger">
