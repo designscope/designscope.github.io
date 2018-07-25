@@ -1,6 +1,6 @@
 $phase: ($container * .085);
 $method: ($phase * 2.75);
-$title: -60px;
+$title: -65px;
 $arrow: $gap4;
 $curve: ($method - ($arrow * 2));
 $feedback: ($phase * .7);
@@ -48,7 +48,7 @@ display: grid;
     }
     &.feedback {
       background-image: url(../images/arrow-feedback.svg);
-      margin-top: (($curve - $gap5));
+      margin-top: (($curve - $gap6));
     }
     &.simple {
       margin-top: (($method - $phase) / 2);
