@@ -48,7 +48,7 @@ display: grid;
     }
     &.feedback {
       background-image: url(../images/arrow-feedback.svg);
-      margin-top: (($curve - $gap6));
+      margin-top: (($curve - $gap5));
     }
     &.simple {
       margin-top: (($method - $phase) / 2);
