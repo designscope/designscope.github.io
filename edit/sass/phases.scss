@@ -1,8 +1,10 @@
 $phase: ($container * .085);
 $method: ($phase * 2.75);
+$title: -60px;
 $arrow: $gap4;
 $curve: ($method - ($arrow * 2));
 $feedback: ($phase * .7);
+$framing: ((($method - $phase) / 2) - 15);
 
 
 
@@ -93,8 +95,7 @@ display: grid;
 }
 &.framing a {
   z-index: 10;
-  @include rotate(7);
-  margin-top: ((($method - $phase) / 2) - 15);
+  margin-top: $framing;
 }
 &.scope a {
   margin-left: 0;
@@ -103,6 +104,60 @@ a:hover {
      @include scale(1.15);
    }
 }
+}
+
+.phase {
+a:before {
+    font-size: $fs2;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+  transform: rotate(-45deg) translate(0, 30px);
+    display: block;
+    position: absolute;
+    color: $c-secondary;
+    @include transition;
+
+}
+&.open a:before {
+  color: $c-primary;
+margin-top: $title;
+}
+    &.framing a:before {
+      content: 'framing';
+      margin-top: $title +( $framing / 2);
+    }
+    &.research a:before {
+      content: 'research';
+    }
+    &.ideation {
+      a.simple:before {
+      content: 'ideation';
+    }
+    a.feedback:before {
+      content: 'feedback';
+    }
+    }
+    &.flow {
+      a.simple:before {
+      content: 'flows';
+    }
+    a.feedback:before {
+      content: 'feedback';
+    }
+    }
+        &.module {
+      a.simple:before {
+      content: 'modules';
+    }
+    a.feedback:before {
+      content: 'feedback';
+    }
+    }
+    &.scope a:before {
+      content: 'scope';
+    }
+
 }
 
 
@@ -169,3 +224,4 @@ a:hover {
       }
     }
 }
+
