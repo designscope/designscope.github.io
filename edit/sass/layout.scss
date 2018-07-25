@@ -169,6 +169,7 @@ footer.footer {
   margin-top: $gap4;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  grid-gap: $gap2;
 }
 .intro.post {
   display: grid;
