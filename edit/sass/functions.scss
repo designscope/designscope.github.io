@@ -6,7 +6,6 @@
 }
 
 %card {
-  min-height: $gap8;
   border: none;
   @include radius($radius);
   @include shadow(box, 0 $radius 0 rgba(0, 0, 0, 0.05));

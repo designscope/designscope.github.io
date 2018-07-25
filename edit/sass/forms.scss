@@ -15,7 +15,7 @@ font-weight: bold;
 }
 
 .btn {
-  padding: $gap2;
+  padding: ($gap2 + 4) $gap2;
 @extend %card;
 @extend %btn;
 }

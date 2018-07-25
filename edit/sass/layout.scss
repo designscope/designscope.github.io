@@ -156,6 +156,7 @@ a.logo {
 footer.footer {
   @include border;
   margin-bottom: 0;
+  margin-top: $gap4;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
@@ -205,18 +206,54 @@ section:not(.intro) > {
    @include border;
  }
 }
-.projects {
+.projects, .members {
  @media screen and (min-width: $bp) {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
  }
- .project {
+ .project, .member {
   @include border;
   margin-bottom: 0;
   & > .title {
     margin-top: 0;
   }
-  &:before {
+
+
+}
+
+
+
+.member {
+      h3, h4 {
+     margin: 0;
+     padding: 0;
+
+  padding-bottom: $gap2;
+    }
+  .title {
+  display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: $gap2;
+
+
+}
+a {
+   display: block;
+        i.fa {
+        margin-right: $gap;
+      }
+}
+   a:not(.btn) {
+      font-size: $fs3;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+
+}
+.project {
+    &:before {
     content:  "";
     height: $gap12;
     display: block;
@@ -224,7 +261,7 @@ section:not(.intro) > {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  &:first-of-type:before {
+    &:first-of-type:before {
     background-image: url(../images/icon/exocortex.svg);
   }
   &:nth-of-type(2):before {
@@ -291,6 +328,10 @@ article.main {
     }
   }
 }
+
+}
+
+
 .avatar {
 
   background-size: contain;
@@ -298,5 +339,3 @@ article.main {
   height: $gap8;
   width: $gap8;
 }
-}
-
