@@ -10,18 +10,16 @@ author:      nonlinear
 
 ### Abstract
 
+Macros (or snippets, autocomplete) are powerful mnemonic devices. Augmented memory across all devices, with extensions.
+
 ### Goals
 
-- **Augmented Memory**
-   - phone numbers, addresses, project templates, all at your fingertips across all devices.
-- **Zero Knowledge**
-   - no cloud, think of a system *a la* crypto wallet or 1password vault
-- **Last Mile**
-   - application runs on all major systems (mac, linux, windows) and mobiles (android, iphone, as a keyboard)
-- **Modular**
-   - user shops for and subscribes to new packages (computer languages, medical terminology, etc)
-- **Assistive**
-   - System builds a personalized tutorial based on new, updated or seldom used macros so user idolizes their wallet.
+||||
+|---|---|---|
+|**Augmented Memory** phone numbers, addresses, project templates, all at your fingertips across all devices.|**Zero Knowledge** no cloud, think of a system *a la* crypto wallet or 1password vault|**Last Mile** application runs on all major systems (mac, linux, windows) and mobiles (android, iphone, as a keyboard)|
+|**Modular** user shops for and subscribes to new packages (computer languages, medical terminology, etc)|**Assistive** System builds a personalized tutorial based on new, updated or seldom used macros so user idolizes their wallet.|
+
+
 
 ### Audiences
 
