@@ -15,7 +15,7 @@
  }
 }
 
-a.next {
+.method a.next {
  font-size: $fs3;
  text-align: right;
  display: block;
@@ -26,6 +26,33 @@ a.next {
   text-decoration: underline;
 }
 }
+
+
+.actions {
+  @include border;
+  @include clearfix;
+  a.btn {
+   @extend %btn-mini;
+   &.next {
+    float: right;
+  }
+  &.off {
+    @extend %btn-off;
+  }
+  &.next:before {
+    content: "Next Phase: ";
+
+  }
+  &.previous:before {
+    content: "Previous Phase: ";
+  }
+    &.off:before {
+    content: "Soon: ";
+  }
+}
+
+}
+
 
 body {
   background-image: url(../images/pattern/grid--inverted.svg);
@@ -295,7 +322,7 @@ article.main {
   display: block;
   section.intro & {
 
-  margin-left: $gap9;
+    margin-left: $gap9;
   }
   &:hover {
     text-decoration: underline;
@@ -303,79 +330,79 @@ article.main {
 }
 
 // .content > ul {
-//   @include reset(all);
-//   @include reset(list);
-// li {
+  //   @include reset(all);
+  //   @include reset(list);
+  // li {
 
-// }
-// }
+    // }
+    // }
 
 
-.content table {
-  counter-reset: my-awesome-counter;
-  td {
-    counter-increment: my-awesome-counter;
-    vertical-align: top;
-    @include border;
-    width: (100% / 3);
-    &:before {
-  content: counter(my-awesome-counter);
-  background-color: $c-primary;
-  color: white;
-  font-family: $font-title;
-  width: $gap4;
-  height: $gap4;
-  text-align: center;
-  @include radius(50%);
-  padding-top: 1px;
-  display: inline-block;
-}
+    .content table {
+      counter-reset: my-awesome-counter;
+      td {
+        counter-increment: my-awesome-counter;
+        vertical-align: top;
+        @include border;
+        width: (100% / 3);
+        &:before {
+          content: counter(my-awesome-counter);
+          background-color: $c-primary;
+          color: white;
+          font-family: $font-title;
+          width: $gap4;
+          height: $gap4;
+          text-align: center;
+          @include radius(50%);
+          padding-top: 1px;
+          display: inline-block;
+        }
+      }
+      strong {
+        @extend h4;
+        display: block;
+      }
+    }
+
+
+    .author {
+      font-size: $fs3;
+      margin-bottom: 0;
+      @include shadow(box, none);
+      .description i.fa {
+        float: right;
+        padding-right: $gap2;
+        margin-top: ($gap2 * -1);
+      }
+      .collapse-trigger {
+       display: grid;
+       grid-template-columns: $gap9 1fr;
+       align-items: center;
+       &, &:hover {
+        text-decoration: none;
+      }
+
+
+    }
+
+
   }
-  strong {
-    @extend h4;
-    display: block;
-  }
-}
 
+  .tags {
+    font-size: $fs3;
+    a {
+      margin-left: $gap;
+      &:not(:first-of-type) {
 
-.author {
-  font-size: $fs3;
-  margin-bottom: 0;
-  @include shadow(box, none);
-  .description i.fa {
-    float: right;
-    padding-right: $gap2;
-    margin-top: ($gap2 * -1);
-  }
-  .collapse-trigger {
-   display: grid;
-   grid-template-columns: $gap9 1fr;
-   align-items: center;
-   &, &:hover {
-    text-decoration: none;
-  }
-
-
-}
-
-
-}
-
-.tags {
-  font-size: $fs3;
-  a {
-    margin-left: $gap;
-    &:not(:first-of-type) {
-
-      padding-left: $gap;
-      border-left: solid 1px $c-secondary;
+        padding-left: $gap;
+        border-left: solid 1px $c-secondary;
+      }
     }
   }
-}
-.avatar {
+  .avatar {
 
-  background-size: contain;
-  @include radius(50%);
-  height: $gap8;
-  width: $gap8;
-}
+    background-size: contain;
+    @include radius(50%);
+    height: $gap8;
+    width: $gap8;
+  }

@@ -57,9 +57,6 @@ Macros (or snippets, autocomplete) are powerful mnemonic devices. Augmented memo
 - Any kind of decision trees (customer service, troubleshooting, procedures)
 - complex syntax
 
-### Next Steps
-
-- list of research
-  - competition (walkthrough of existing autocompletes, snippets)
-  - security
-  - user research
+<div class="actions">
+<a href="/exocortex-research" class="btn next">Research</a>
+</div>
