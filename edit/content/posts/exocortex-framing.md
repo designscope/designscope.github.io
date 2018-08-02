@@ -3,7 +3,7 @@ title:       Framing
 slug:        exocortex-framing
 template:    exocortex.hbs
 project:     exocortex
-tags:        lorem ipsum dolor framing
+tags:        framing
 date:        2018-07-11
 author:      nonlinear
 ---

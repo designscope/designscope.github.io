@@ -106,6 +106,8 @@ a:hover {
 }
 }
 
+
+
 .phase {
 a:before {
     font-size: $fs2;
@@ -119,6 +121,7 @@ a:before {
     @include transition;
 
 }
+
 &.open a:before {
   color: $c-primary;
 margin-top: $title;
@@ -158,6 +161,14 @@ margin-top: $title;
       content: 'scope';
     }
 
+}
+
+.method.article {
+  margin-top: -$gap6;
+  .phase:not(.open) a:before {
+  display: none;
+  @include hide-text;
+}
 }
 
 

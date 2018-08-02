@@ -1,6 +1,11 @@
 {{> header}}
 {{#post}}
 {{> title project='exocortex' name='Exocortex'}}
+{{#if tags}}
+
+{{> phase}}
+
+{{/if}}
 <section class="content">
     {{{body}}}
 </section>
