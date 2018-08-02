@@ -29,6 +29,6 @@ background-color: lighten($c-secondary, 5%) !important;
     font-size: $fs3;
 }
 %btn-off {
-      @include opacity(40);
+      @include opacity(60);
       @include disable(link);
 }

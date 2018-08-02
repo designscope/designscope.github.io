@@ -1,7 +1,7 @@
 {{> header}}
 {{> title}}
 <section class="description">
-<p>{{site.description}}</p>
+  <p>{{site.description}}</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatibus iure nihil pariatur perspiciatis vitae, minima magni voluptas ab culpa.</p>
 </section>
 <section class="phases">
@@ -9,60 +9,73 @@
     <span>The Phases</span>
     <p>Click on each phase to learn its description, main goal and possible deliverables</p>
   </h2>
-{{> phases}}
+  {{> phases}}
 </section>
 <section>
   <h2>The projects</h2>
-  <p>In order to test it, we chose three concepts to run against the methodology. The early phases are easier to conceptualize, and we're always looking for experts in the field for a more robust research and ideation.</p>
+  <p>In order to test it, we chose three concepts to run against our methodte. The early phases are easier to conceptualize, and we're always looking for experts in the field for a more robust research and ideation.</p>
   <div class="projects">
     <div class="project">
       <h3 class="title">exocortex macros</h3>
       <div class="description">
        <p>Augmented memory across all devices, with extensions.</p>
      </div>
-     <div class="btn-group">
-      <a class="btn" href="exocortex-framing" type="button">read framing</a>
-      <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
-        <i class="fa fa-bars"></i>
-    </button>
-    <div class="dropdown-menu">
-      <p>Other phases appear here.</p>
-      <p>Subscribe to our newsletter to be informed first.</p>
+     <a class="btn" href="exocortex-framing" type="button">read framing</a>
+     <div class="panel">
+       <a data-toggle="collapse" href="#exocortex" class="collapse-trigger">
+         all phases<i class="fa fa-caret-down"></i>
+       </a>
+       <div id="exocortex" class="collapse">
+         <div class="phase-menu">
+
+          <a href="/exocortext-framing">Framing</a>
+          <a href="/exocortext-research">Research</a>
+          <a class="soon" href="/exocortext-ideation">Ideation</a>
+          {{> subscribe-trigger}}
+        </div>
+      </div>
     </div>
   </div>
-</div>
-<div class="project">
-  <h3 class="title">Object<br>Library</h3>
-  <div class="description">
-    <p>A digital shadow for physical objects, recording entire lifecycle, from cradle to grave.</p>
-  </div>
-  <div class="btn-group">
-      <a class="btn" href="object-framing" type="button">read framing</a>
-      <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
-        <i class="fa fa-bars"></i>
-    </button>
-    <div class="dropdown-menu">
-      <p>Other phases appear here.</p>
-      <p>Subscribe to our newsletter to be informed first.</p>
+  <div class="project">
+    <h3 class="title">Object<br>Library</h3>
+    <div class="description">
+      <p>A digital shadow for physical objects, recording entire lifecycle, from cradle to grave.</p>
     </div>
-  </div>
-</div>
-<div class="project">
-  <h3 class="title">Continuous Grading</h3>
-  <div class="description">
-    <p>A set of <strong>Travis CI</strong> tests measuring student grading criteria.</p>
-  </div>
-  <div class="btn-group">
-      <a class="btn" href="grading-framing" type="button">read framing</a>
-      <button data-toggle="dropdown" class="btn dropdown-toggle" type="button">
-        <i class="fa fa-bars"></i>
-    </button>
-    <div class="dropdown-menu">
-      <p>Other phases appear here.</p>
-      <p>Subscribe to our newsletter to be informed first.</p>
+    <a class="btn" href="object-framing">read framing</a>
+    <div class="panel">
+       <a data-toggle="collapse" href="#object" class="collapse-trigger">
+         all phases<i class="fa fa-caret-down"></i>
+       </a>
+       <div id="object" class="collapse">
+         <div class="phase-menu">
+<a href="/object-framing">Framing</a>
+          <a class="soon" href="/exocortext-research">Research</a>
+          {{> subscribe-trigger}}
+        </div>
+      </div>
     </div>
+
   </div>
-</div>
+  <div class="project">
+    <h3 class="title">Continuous Grading</h3>
+    <div class="description">
+      <p>A set of <strong>Travis CI</strong> tests measuring student grading criteria.</p>
+    </div>
+
+      <a class="btn off" href="grading-framing">soon: framing</a>
+<div class="panel">
+       <a data-toggle="collapse" href="#grading" class="collapse-trigger">
+         all phases<i class="fa fa-caret-down"></i>
+       </a>
+       <div id="grading" class="collapse">
+         <div class="phase-menu">
+<a class="soon" href="grading-framing">Framing</a>
+          {{> subscribe-trigger}}
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 </section>
 <section class="mission">
@@ -80,5 +93,7 @@
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, sint. A officiis repellat aspernatur et fugit porro quas, hic voluptatum.</p>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate non ullam aliquid iusto amet consequatur iste itaque accusamus veritatis totam vitae est rerum, ab ea. Cum optio ipsum, dicta tenetur!</p>
 </section> -->
+
+{{> subscribe-modal}}
 {{> footer}}
 {{> js}}

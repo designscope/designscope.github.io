@@ -18,7 +18,27 @@ font-weight: bold;
   padding: ($gap2 + 4) $gap2;
 @extend %card;
 @extend %btn;
+  &.off {
+    @extend %btn-off;
+  }
 }
+
+.panel {
+  @include shadow(box, none);
+      margin-bottom: 0;
+      .collapse-trigger {
+       i.fa {
+        float: right;
+      }
+       &, &:hover {
+        text-decoration: none;
+      }
+
+
+    }
+
+
+  }
 
 .dropdown-menu {
   @extend %card;

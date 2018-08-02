@@ -36,9 +36,6 @@
    &.next {
     float: right;
   }
-  &.off {
-    @extend %btn-off;
-  }
   &.next:before {
     content: "Next Phase: ";
 
@@ -46,7 +43,7 @@
   &.previous:before {
     content: "Previous Phase: ";
   }
-    &.off:before {
+  &.off:before {
     content: "Soon: ";
   }
 }
@@ -195,8 +192,13 @@ footer.footer {
   margin-bottom: 0;
   margin-top: $gap4;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: $gap2;
+  font-size: $fs3;
+  a.btn {
+    display: block;
+    @extend %btn-mini;
+  }
 }
 .intro.post {
   display: grid;
@@ -213,7 +215,7 @@ footer.footer {
 
 
 }
-form.subscribe .btn-group {
+#subscribe form .btn-group {
   input#tlemail {
     @extend %card;
     display: inline-block;
@@ -258,7 +260,76 @@ section:not(.intro) > {
 
 }
 
+.project {
+  & > a.btn {
+    display: block;
+    margin-bottom: $gap2;
+  }
+  .panel {
 
+    .collapse-trigger {
+      @include clearfix;
+      display: block;
+      font-size: $fs3;
+      &:before {
+        display: inline;
+      }
+      &:not([aria-expanded="true"]) {
+        &:before {
+          content: "Show ";
+        }
+      }
+      &[aria-expanded="true"] {
+        &:before {
+          content: "Hide ";
+        }
+      }
+    }
+
+    .phase-menu {
+      padding-top: $gap2;
+      .subscribe h4 {
+        display: none;
+      }
+      a:not(.btn) {
+        font-size: $fs4;
+        display: block;
+        @include transition;
+        padding-bottom: 3px;
+        text-transform: uppercase;
+        &:first-of-type {
+          border-top: solid 1px $c-secondary;
+          padding-top: $gap;
+        }
+        &:last-of-type {
+          border-bottom: solid 1px $c-secondary;
+          margin-bottom: $gap;
+        }
+        &.soon {
+          @include disable(link);
+          color: $c-secondary;
+          &:after {
+            content: "soon";
+            float: right;
+            font-size: $fs2;
+            background-color: $c-secondary;
+            color: $c-primary;
+            padding: 3px $gap;
+            @include radius($gap2);
+          }
+        }
+      }
+    }
+  }
+}
+
+.subscribe {
+  font-size: $fs3;
+  a.btn {
+    @extend %btn-mini;
+    display: block;
+  }
+}
 
 .member {
   h3, h4 {
@@ -302,7 +373,16 @@ a {
 }
 }
 
+.author .collapse-trigger {
+ display: grid;
+ grid-template-columns: $gap9 1fr;
+ align-items: center;
 
+ font-size: $fs3;
+ i.fa {
+  margin-top: ($gap2 * -1);
+}
+}
 
 
 article.main {
@@ -365,44 +445,23 @@ article.main {
     }
 
 
-    .author {
+
+
+    .tags {
       font-size: $fs3;
-      margin-bottom: 0;
-      @include shadow(box, none);
-      .description i.fa {
-        float: right;
-        padding-right: $gap2;
-        margin-top: ($gap2 * -1);
-      }
-      .collapse-trigger {
-       display: grid;
-       grid-template-columns: $gap9 1fr;
-       align-items: center;
-       &, &:hover {
-        text-decoration: none;
-      }
+      a {
+        margin-left: $gap;
+        &:not(:first-of-type) {
 
-
-    }
-
-
-  }
-
-  .tags {
-    font-size: $fs3;
-    a {
-      margin-left: $gap;
-      &:not(:first-of-type) {
-
-        padding-left: $gap;
-        border-left: solid 1px $c-secondary;
+          padding-left: $gap;
+          border-left: solid 1px $c-secondary;
+        }
       }
     }
-  }
-  .avatar {
+    .avatar {
 
-    background-size: contain;
-    @include radius(50%);
-    height: $gap8;
-    width: $gap8;
-  }
+      background-size: contain;
+      @include radius(50%);
+      height: $gap8;
+      width: $gap8;
+    }
