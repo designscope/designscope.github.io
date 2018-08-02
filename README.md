@@ -1,38 +1,30 @@
-## TODO // ALL
-
-
-- Discuss phases (scenarios/flows/modules)
-- ~~List project contenders~~
-- ~~Choose projects~~
-- ~~Discuss social media, hashtags~~
-- ~~Review exocortex framing~~
-
-## TODO // Nicholas
+## TODO // Structure
 
 - title and icons on post
-- Subfolders on permalinks
-- Test rss feed for podcast
-- Framing for object library
-- ~~author loop~~
+- modal issues
+- design subscribe form
+- patreon and mastodon icons
 - Responsive design
-- phases on each title
-- ~~Partialize elements~~
-- ~~Move v2 to design scope~~
-- ~~Fix fonts path~~
-- ~~Tile hex color fix~~
-- ~~Animation (refine)~~
-- ~~Blog template (same as cover)~~
-- ~~Framing for exocortex~~
+- review phase icons
+- mystery member
+- phases subway map on each article, correct
 
-## TODO // John
+## TODO // copy
 
-- Turn recorded convo to audio
-- Edit podcast pilot/test
-- Deployment script
-- Complete site.json author
-- Send avatar
-- Framing for continuous grading
+- Framing for object library
+- framing for continuos grading
+- review phases
+- description
+- mission
+- review team
 
-- ~~CNAME, designscope.org~~
-- Catch-all, contact@designscope.org
-- ~~Resolve bower issues~~
+## TODO // Promotion
+
+- check patreon
+- mastodon
+  - create user
+  - link twitter/mastodon
+- podcast
+  - Edit podcast pilot/test
+  - Turn recorded convo to audio
+  - Test rss feed for podcast

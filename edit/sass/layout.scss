@@ -335,19 +335,17 @@ section:not(.intro) > {
   h3, h4 {
    margin: 0;
    padding: 0;
-
    padding-bottom: $gap2;
  }
- .title {
+  .title {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-gap: $gap2;
-
-
-}
-a {
- display: block;
-}
+  }
+  .btn {
+  @extend %btn-mini;
+  display: block;
+  }
 
 }
 
