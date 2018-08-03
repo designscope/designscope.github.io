@@ -28,7 +28,7 @@ display: grid;
  grid-template-columns: ($phase * 0.7) $phase repeat(3, $method) 1fr;
 
  .phase {
-   height: $method;
+   height: $method - 20px;
    background: none;
    .arrow {
     background-color: $c-arrow;
@@ -48,7 +48,7 @@ display: grid;
     }
     &.feedback {
       background-image: url(../images/arrow-feedback.svg);
-      margin-top: (($curve - $gap6));
+      margin-top: (($curve - $gap5));
     }
     &.simple {
       margin-top: (($method - $phase) / 2);
