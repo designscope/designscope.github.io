@@ -250,7 +250,7 @@ section:not(.intro) > {
    display: grid;
    grid-template-columns: repeat(3, 1fr);
  }
- .project, .member {
+ .project, .member, .project-menu {
   @include border;
   margin-bottom: 0;
   & > .title {
@@ -260,7 +260,7 @@ section:not(.intro) > {
 
 }
 
-.project {
+.project-menu {
   & > a.btn {
     display: block;
     margin-bottom: $gap2;
@@ -365,7 +365,7 @@ section:not(.intro) > {
   &:nth-of-type(2):before {
     background-image: url(../images/icon/object.svg);
   }
-  &:last-of-type:before {
+  &:nth-of-type(3):before {
     background-image: url(../images/icon/grading.svg);
   }
 }
