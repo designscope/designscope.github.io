@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Design Scope]]></title><description><![CDATA[define description]]></description><link>http://github.com/dylang/node-rss</link><generator>Gulp 3.9.1</generator><lastBuildDate>Sat, 04 Aug 2018 19:18:02 GMT</lastBuildDate><atom:link href="/rss.xml" rel="self" type="application/rss+xml"/><ttl>60</ttl><item><title><![CDATA[Framing]]></title><description><![CDATA[<h3 id="abstract">Abstract</h3>
+<p>Macros (or snippets, autocomplete) are powerful mnemonic devices. Augmented memory across all devices, with extensions.</p>
+<h3 id="goals">Goals</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Augmented Memory</strong> phone numbers, addresses, project templates, all at your fingertips across all devices.</td>
+<td><strong>Zero Knowledge</strong> no cloud, think of a system <em>a la</em> crypto wallet or 1password vault</td>
+<td><strong>Last Mile</strong> application runs on all major systems (mac, linux, windows) and mobiles (android, iphone, as a keyboard)</td>
+</tr>
+<tr>
+<td><strong>Modular</strong> user shops for and subscribes to new packages (computer languages, medical terminology, etc)</td>
+<td><strong>Assistive</strong> System builds a personalized tutorial based on new, updated or seldom used macros so user idolizes their wallet.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="audiences">Audiences</h3>
+<ul>
+<li><strong>Developers</strong></li>
+<li><strong>Clerical</strong><ul>
+<li>Anyone who spends a lot of time answering messages and talking to public.</li>
+</ul>
+</li>
+<li><strong>Medical/Techical/Legal professionals</strong><ul>
+<li>Groups who use technical terminology.</li>
+</ul>
+</li>
+</ul>
+<h3 id="challenges">Challenges</h3>
+<ul>
+<li><strong>Compelling Examples</strong><ul>
+<li>macros are <em>really</em> powerful, and exocortex needs to provide compelling examples to convey possibilities.</li>
+</ul>
+</li>
+<li><strong>Fragmented Market</strong><ul>
+<li>macros are used by niche audiences, under different names and conventions. Exocortex macros should either follow or become an industry standard, with conversion tools.</li>
+</ul>
+</li>
+<li><strong>Proper Mental Model</strong><ul>
+<li>macros are highly technical, its possibilities only understood after users become experienced. A proper mental model is needed for users to anticipate what they can do with it.</li>
+</ul>
+</li>
+<li><strong>Last Mile</strong><ul>
+<li>Establishing a presence on all major systems is an ongoing struggle. not only normalizing onboarding in different systems but keeping up-to-date with updates thst may affect usage.</li>
+</ul>
+</li>
+</ul>
+<h3 id="monetization-possibilities">monetization Possibilities</h3>
+<ul>
+<li>Organization Mode<ul>
+<li><strong>Privacy</strong></li>
+<li><strong>Team Management</strong><ul>
+<li>absolute control of which team members receives which package. Absolute control of who&#39;s in and who&#39;s out.</li>
+</ul>
+</li>
+<li><strong>Top-Down Subscription</strong><ul>
+<li>Admin creates new packages, chooses teams, and team members receive it automatically.</li>
+</ul>
+</li>
+<li><strong>Automatic Update</strong><ul>
+<li>Team members receive updates automatically, ensuring company standards are always current.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="possibilities">Possibilities</h3>
+<ul>
+<li>letter templates</li>
+<li>Any kind of decision trees (customer service, troubleshooting, procedures)</li>
+<li>complex syntax</li>
+</ul>
+<div class="actions">
+<a href="exocortex-research" class="btn next">Research</a>
+</div>]]></description><link>/exocortex-framing/</link><guid isPermaLink="false">/exocortex-framing/</guid><category><![CDATA[framing]]></category><pubDate>Wed, 11 Jul 2018 04:00:00 GMT</pubDate></item><item><title><![CDATA[Research]]></title><description><![CDATA[<h3 id="research-list">Research List</h3>
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Comparison</strong> walkthrough of existing autocompletes, snippets, comparison</td>
+<td><strong>Security</strong> How to make it Zero Knowledge? Also, define concept.</td>
+<td><strong>User Personas</strong> Interview power users, define personas.</td>
+</tr>
+</tbody>
+</table>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolores animi officiis. Rem explicabo corrupti nesciunt eos autem, dicta tempore aperiam blanditiis minima ex at facilis! Quos placeat earum, at.</p>
+<div class="actions">
+  <a href="exocortex-framing" class="btn previous">Framing</a>
+<a href="exocortex-ideation" class="btn next off">Ideation</a>
+</div>]]></description><link>/exocortex-research/</link><guid isPermaLink="false">/exocortex-research/</guid><category><![CDATA[research]]></category><pubDate>Wed, 11 Jul 2018 04:00:00 GMT</pubDate></item><item><title><![CDATA[Framing]]></title><description><![CDATA[<h3 id="abstract">Abstract</h3>
+<h3 id="goals">Goals</h3>
+<p>pending</p>
+<h3 id="audiences">Audiences</h3>
+<p>pending</p>
+<h3 id="monetization">Monetization</h3>
+<h3 id="challenges">Challenges</h3>
+<p>pending</p>
+<h3 id="possibilities">Possibilities</h3>
+<p>pending</p>
+]]></description><link>/grading-framing/</link><guid isPermaLink="false">/grading-framing/</guid><category><![CDATA[lorem]]></category><category><![CDATA[ipsum]]></category><category><![CDATA[dolor]]></category><category><![CDATA[framing]]></category><pubDate>Wed, 11 Jul 2018 04:00:00 GMT</pubDate></item><item><title><![CDATA[Object Library, Framing]]></title><description><![CDATA[<h3 id="abstract">Abstract</h3>
+<h3 id="goals">Goals</h3>
+<p>pending</p>
+<h3 id="audiences">Audiences</h3>
+<p>pending</p>
+<h3 id="monetization">Monetization</h3>
+<h3 id="challenges">Challenges</h3>
+<p>pending</p>
+<h3 id="possibilities">Possibilities</h3>
+<p>pending</p>
+]]></description><link>/object-framing/</link><guid isPermaLink="false">/object-framing/</guid><category><![CDATA[lorem]]></category><category><![CDATA[ipsum]]></category><category><![CDATA[dolor]]></category><category><![CDATA[framing]]></category><pubDate>Wed, 11 Jul 2018 04:00:00 GMT</pubDate></item></channel></rss>
